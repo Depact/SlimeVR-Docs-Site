@@ -1,0 +1,47 @@
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  table {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+  }
+
+  tbody td:first-child::before {
+    content: ""; /* Remove the ::before content for the first child */
+    flex: 0;
+  }
+
+  tbody td:first-child {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  tbody td:last-child {
+    border-bottom: none;
+  }
+}
