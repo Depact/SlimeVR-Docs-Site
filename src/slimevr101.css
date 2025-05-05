@@ -12,36 +12,31 @@
   tbody tr {
     display: block;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--fg);
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 0;
   }
 
   tbody td {
     display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-  }
-
-  tbody td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    flex: 1;
-    text-align: left;
-  }
-
-  tbody td:first-child::before {
-    content: ""; /* Remove the ::before content for the first child */
-    flex: 0;
+    border: none;
   }
 
   tbody td:first-child {
     display: block;
     font-size: 1.5em;
     font-weight: bold;
+    padding-top: 1rem;
+  }
+
+  tbody td:not(:first-child)::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-align: left;
+    padding-right: 1rem;
   }
 
   tbody td:last-child {
-    border-bottom: none;
+    padding: 2rem 10px 1rem 10px;
   }
 }
