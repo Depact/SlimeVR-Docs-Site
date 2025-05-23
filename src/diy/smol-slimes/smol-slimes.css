@@ -38,7 +38,7 @@ table.table-sort th {
 }
 
 /* Responsive styling for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   table.community-builds-table {
     display: block;
   }
