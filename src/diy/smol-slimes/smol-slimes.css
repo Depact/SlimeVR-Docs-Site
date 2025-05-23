@@ -49,6 +49,9 @@ table.table-sort th {
 
   table.community-builds-table thead tr {
     border: none;
+    display: flex; /* Show th in a row */
+    flex-wrap: wrap;
+    gap: 0.5em;
   }
 
   .community-builds-table thead th:before {
@@ -57,13 +60,15 @@ table.table-sort th {
     display: contents;
   }
 
-  .community-builds-table thead th,
-  .community-builds-table tbody tr {
+  .community-builds-table thead th {
     display: block;
     margin-bottom: 1rem;
     border: 1px solid var(--fg);
     border-radius: 8px;
     padding: 10px 0;
+    flex: 1 1 auto; /* Allow th to grow/shrink in row */
+    min-width: 80px;
+    margin-bottom: 0; /* Remove vertical margin for row layout */
   }
 
   .community-builds-table thead th.disable-sort {
