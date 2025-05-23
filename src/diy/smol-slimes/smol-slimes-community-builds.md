@@ -24,6 +24,7 @@ This page is dedicated only to builds that others can build themselves. Builds t
 <table class="community-builds-table table-sort table-arrows">
     <thead>
         <tr>
+            <th class="disable-sort">Image</th>
             <th class="onload-sort">Name</th>
             <th>Author</th>
             <th>Link</th>
@@ -35,44 +36,62 @@ This page is dedicated only to builds that others can build themselves. Builds t
     </thead>
     <tbody>
         <tr>
-            <td>Aed-Slimes</td>
-            <td data-label="Author">Aed</td>
-            <td data-label="Link">
+            <td class="case-image">
+                <img
+                src="https://raw.githubusercontent.com/Aed-1/Aed-Slimes/refs/heads/main/img/Aed-Slime.png"
+                loading="lazy"
+                />
+            </td>
+            <td class="case-name">Aed-Slimes</td>
+            <td class="case-author" data-label="Author">Aed</td>
+            <td class="case-link" data-label="Link">
                 <a href="https://github.com/Aed-1/Aed-Slimes">GitHub</a>
             </td>
-            <td data-label="USB">✅</td>
-            <td data-label="PCB">✅</td>
-            <td data-label="Battery">
+            <td class="case-usb" data-label="USB">✅</td>
+            <td class="case-pcb" data-label="PCB">✅</td>
+            <td class="case-battery" data-label="Battery">
                 <div class="tooltip-text-container">120 mAh
                     <span class="tooltip-text">LIR2450 Battery</span>
                 </div>
             </td>
-            <td data-label="Dock">✖️</td>
+            <td class="case-dock" data-label="Dock">✖️</td>
         </tr>
         <tr>
-            <td>Gremlin</td>
-            <td data-label="Author">ManicQuinn</td>
-            <td data-label="Link">
+            <td class="case-image">
+                <img
+                src="assets/Gremlin-by-ManicQuinn.png"
+                loading="lazy"
+                />
+            </td>
+            <td class="case-name">Gremlin</td>
+            <td class="case-author" data-label="Author">ManicQuinn</td>
+            <td class="case-link" data-label="Link">
                 <a href="https://github.com/ManicQuinn/SlimeVR-Gremlin">GitHub</a>
             </td>
-            <td data-label="USB">✅</td>
-            <td data-label="PCB">✖️</td>
-            <td data-label="Battery">
+            <td class="case-usb" data-label="USB">✅</td>
+            <td class="case-pcb" data-label="PCB">✖️</td>
+            <td class="case-battery" data-label="Battery">
                 <div class="tooltip-text-container">110 mAh
                     <span class="tooltip-text">401230 Battery</span>
                 </div>
             </td>
-            <td data-label="Dock">✖️</td>
+            <td class="case-dock" data-label="Dock">✖️</td>
         </tr>
         <tr>
-            <td>Marzipan</td>
-            <td data-label="Author">Colanns</td>
-            <td data-label="Link">
+            <td class="case-image">
+                <img
+                src="assets/Marzipan-Case-By-Colanns.png"
+                loading="lazy"
+                />
+            </td>
+            <td class="case-name">Marzipan</td>
+            <td class="case-author" data-label="Author">Colanns</td>
+            <td class="case-link" data-label="Link">
                 <a href="https://github.com/colasama/Marzipan">GitHub</a>
             </td>
-            <td data-label="USB">✅</td>
-            <td data-label="PCB">✅</td>
-            <td data-label="Battery" style="white-space: nowrap;">
+            <td class="case-usb" data-label="USB">✅</td>
+            <td class="case-pcb" data-label="PCB">✅</td>
+            <td class="case-battery" data-label="Battery" style="white-space: nowrap;">
                 <div class="tooltip-text-container">110 mAh
                     <span class="tooltip-text">401230 Battery</span>
                 </div>
@@ -81,32 +100,44 @@ This page is dedicated only to builds that others can build themselves. Builds t
                     <span class="tooltip-text">501230 Battery</span>
                 </div>
             </td>
-            <td data-label="Dock">✖️</td>
+            <td class="case-dock" data-label="Dock">✖️</td>
         </tr>
         <tr>
-            <td>SlimeNRF R1/R2</td>
-            <td data-label="Author">sctanf</td>
-            <td data-label="Link">
+            <td class="case-image">
+                <img
+                src="assets/SlimeNRF-R1&R2-by-sctanf.jpg"
+                loading="lazy"
+                />
+            </td>
+            <td class="case-name">SlimeNRF R1/R2</td>
+            <td class="case-author" data-label="Author">sctanf</td>
+            <td class="case-link" data-label="Link">
                 <a href="https://github.com/SlimeVR/SlimeVR-Tracker-nRF-PCB">GitHub</a>
             </td>
-            <td data-label="USB">✖️</td>
-            <td data-label="PCB">✅</td>
-            <td data-label="Battery">
+            <td class="case-usb" data-label="USB">✖️</td>
+            <td class="case-pcb" data-label="PCB">✅</td>
+            <td class="case-battery" data-label="Battery">
                 <div class="tooltip-text-container">300 mAh
                     <span class="tooltip-text">601230 Battery</span>
                 </div>
             </td>
-            <td data-label="Dock">✅</td>
+            <td class="case-dock" data-label="Dock">✅</td>
         </tr>
         <tr>
-            <td>SlimeNRF R3</td>
-            <td data-label="Author">sctanf</td>
-            <td data-label="Link">
+            <td class="case-image">
+                <img
+                src="assets/SlimeNRF-R3-by-sctanf.png"
+                loading="lazy"
+                />
+            </td>
+            <td class="case-name">SlimeNRF R3</td>
+            <td class="case-author" data-label="Author">sctanf</td>
+            <td class="case-link" data-label="Link">
                 <a href="https://oshwlab.com/sctanf/slimenrf3">Oshwlab</a>
             </td>
-            <td data-label="USB">✅</td>
-            <td data-label="PCB">✅</td>
-            <td data-label="Battery" style="white-space: nowrap;">
+            <td class="case-usb" data-label="USB">✅</td>
+            <td class="case-pcb" data-label="PCB">✅</td>
+            <td class="case-battery" data-label="Battery" style="white-space: nowrap;">
                 <div class="tooltip-text-container">80 mAh
                     <span class="tooltip-text">301230 Battery</span>
                 </div>
@@ -115,67 +146,91 @@ This page is dedicated only to builds that others can build themselves. Builds t
                     <span class="tooltip-text">242030 Battery</span>
                 </div>
             </td>
-            <td data-label="Dock">
+            <td class="case-dock" data-label="Dock">
                 <div class="tooltip-text-container">✅
                     <span class="tooltip-text">Use SlimeNRF R1/R2 dock.</span>
                 </div>
             </td>
         </tr>
         <tr>
-            <td>SlimeNRF-Fuimini</td>
-            <td data-label="Author">Zipra1</td>
-            <td data-label="Link">
+            <td class="case-image">
+                <img
+                src="assets/SlimeNRF-Fuimini-by-Zipra1.png"
+                loading="lazy"
+                />
+            </td>
+            <td class="case-name">SlimeNRF-Fuimini</td>
+            <td class="case-author" data-label="Author">Zipra1</td>
+            <td class="case-link" data-label="Link">
                 <a href="https://github.com/Zipra1/SlimeNRF-Fuimini">GitHub</a>
             </td>
-            <td data-label="USB">✅</td>
-            <td data-label="PCB">✅</td>
-            <td data-label="Battery">100 mAh</td>
-            <td data-label="Dock">✅</td>
+            <td class="case-usb" data-label="USB">✅</td>
+            <td class="case-pcb" data-label="PCB">✅</td>
+            <td class="case-battery" data-label="Battery">100 mAh</td>
+            <td class="case-dock" data-label="Dock">✅</td>
         </tr>
         <tr>
-            <td>Smol Panini Case</td>
-            <td data-label="Author">TigsterCox</td>
-            <td data-label="Link">
+            <td class="case-image">
+                <img
+                src="assets/Smol-Panini-Case-by-TigsterCox.png"
+                loading="lazy"
+                />
+            </td>
+            <td class="case-name">Smol Panini Case</td>
+            <td class="case-author" data-label="Author">TigsterCox</td>
+            <td class="case-link" data-label="Link">
                 <a href="https://github.com/TigsterCox/Smol-Panini-Case/">Github</a>
             </td>
-            <td data-label="USB">✅</td>
-            <td data-label="PCB">✖️</td>
-            <td data-label="Battery">
+            <td class="case-usb" data-label="USB">✅</td>
+            <td class="case-pcb" data-label="PCB">✖️</td>
+            <td class="case-battery" data-label="Battery">
                 <div class="tooltip-text-container">180 mAh
                     <span class="tooltip-text">601230 Battery</span>
                 </div>
             </td>
-            <td data-label="Dock">✖️</td>
+            <td class="case-dock" data-label="Dock">✖️</td>
         </tr>
         <tr>
-            <td>Ibis Trackers</td>
-            <td data-label="Author">brisfknibis</td>
-            <td data-label="Link">
+            <td class="case-image">
+                <img
+                src="assets/Ibis-Trackers-by-brisfknibis.png"
+                loading="lazy"
+                />
+            </td>
+            <td class="case-name">Ibis Trackers</td>
+            <td class="case-author" data-label="Author">brisfknibis</td>
+            <td class="case-link" data-label="Link">
                 <a href="https://github.com/brisfknibis/ibis-trackers/">Github</a>
             </td>
-            <td data-label="USB">✅</td>
-            <td data-label="PCB">✖️</td>
-            <td data-label="Battery">
+            <td class="case-usb" data-label="USB">✅</td>
+            <td class="case-pcb" data-label="PCB">✖️</td>
+            <td class="case-battery" data-label="Battery">
                 <div class="tooltip-text-container">100 mAh
                     <span class="tooltip-text">401030 Battery</span>
                 </div>
             </td>
-            <td data-label="Dock">✖️</td>
+            <td class="case-dock" data-label="Dock">✖️</td>
         </tr>
         <tr>
-            <td>Stacked SmolSlime</td>
-            <td data-label="Author">LyallUlric</td>
-            <td data-label="Link">
+            <td class="case-image">
+                <img
+                src="assets/Stacked-SmolSlime-by-LyallUlric.png"
+                loading="lazy"
+                />
+            </td>
+            <td class="case-name">Stacked SmolSlime</td>
+            <td class="case-author" data-label="Author">LyallUlric</td>
+            <td class="case-link" data-label="Link">
                 <a href="https://www.thingiverse.com/thing:6941615">Thingiverse</a>
             </td>
-            <td data-label="USB">✅</td>
-            <td data-label="PCB">✖️</td>
-            <td data-label="Battery">
+            <td class="case-usb" data-label="USB">✅</td>
+            <td class="case-pcb" data-label="PCB">✖️</td>
+            <td class="case-battery" data-label="Battery">
                 <div class="tooltip-text-container">100 mAh
                     <span class="tooltip-text">401030 Battery</span>
                 </div>
             </td>
-            <td data-label="Dock">✖️</td>
+            <td class="case-dock" data-label="Dock">✖️</td>
         </tr>
     </tbody>
 </table>

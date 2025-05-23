@@ -43,10 +43,6 @@ table.table-sort th {
     display: block;
   }
 
-  table.community-builds-table a {
-    padding-left: 0.5em;
-  }
-
   table.community-builds-table thead {
     background: none;
   }
@@ -70,6 +66,17 @@ table.table-sort th {
     padding: 10px 0;
   }
 
+  .community-builds-table thead th.disable-sort {
+    display: none;
+  }
+
+  .community-builds-table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .community-builds-table tbody td {
     display: flex;
     border: none;
@@ -82,9 +89,41 @@ table.table-sort th {
     padding-top: 1rem;
   }
 
-  .community-builds-table tbody td:not(:first-child)::before {
+  .community-builds-table tbody td:not(.case-image):not(.case-name)::before {
     content: attr(data-label) ': ';
     font-weight: bold;
     display: contents;
+    padding-right: 0.5em;
   }
+
+  .community-builds-table tbody td a {
+    padding-left: 0.5em;
+  }
+
+  .community-builds-table tbody td.case-name {
+    order: 1;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .community-builds-table tbody td.case-author {
+    order: 2;
+    font-style: italic;
+  }
+
+  .community-builds-table tbody td.case-image {
+    order: 3;
+  }
+
+  .community-builds-table tbody td.case-link,
+  .community-builds-table tbody td.case-usb,
+  .community-builds-table tbody td.case-pcb,
+  .community-builds-table tbody td.case-battery,
+  .community-builds-table tbody td.case-dock {
+    order: 4;
+  }
+}
+
+table.community-builds-table img {
+  min-width: 50px;
 }
