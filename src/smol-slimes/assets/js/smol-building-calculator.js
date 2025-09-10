@@ -37,7 +37,7 @@
                     amount: (set) => set,
                     cost: () => 6.9,
                     costAll: (set) => set * 6.9 + 6.7,
-                    links: '<a href="https://store.kouno.xyz/products/icm-45686-qmc6309-module" target=\"_blank\">KOUNOLAB ICM-45686 + QMC6309</a>',
+                    links: '<a href="https://shop.slimevr.dev/products/slimevr-mumo-breakout-module-v1-icm-45686-qmc6309" target=\"_blank\">SlimeVR Mumo Breakout Module V1 (ICM-45686 + QMC6309)</a>',
                 },
                 {
                     name: "LSM6DSV",
@@ -45,6 +45,13 @@
                     cost: () => 9.2,
                     costAll: (set) => set * 9.2 + 5.58,
                     links: '<a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">Moffshop LSM6DSV</a>',
+                },
+                {
+                    name: "Chrysalis (ICM-45686 shield with button and RGB LED)",
+                    amount: (set) => set,
+                    cost: () => 10,
+                    costAll: (set) => set * 10 + 4.90,
+                    links: '<a href="https://nekumori.pink/products/chysalis-v1_3" target="_blank">Nekumori Chrysalis</a>',
                 },
             ],
         },
@@ -159,7 +166,7 @@
                             <a href="https://pl.aliexpress.com/item/32804319193.html" target=\"_blank\">$5.07 32mm buckles 10pcs</a>\
                         </li>\
                         <li>\
-                            <a href="https://www.aliexpress.com/item/1005003917576160.html" target=\"_blank\">$12.62 30mm, 10m band with latex webbing</a>\
+                            <a href="https://www.aliexpress.com/item/1005003917576160.html" target=\"_blank\">$12.62 30mm, 5m band with latex webbing</a>\
                         </li>\
                         <li>\
                             Needle and thread\

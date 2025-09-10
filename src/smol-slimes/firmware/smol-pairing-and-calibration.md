@@ -123,7 +123,7 @@ Note: The LED will blink when you place it flat on each side and will blink cont
 * ```list``` - Get paired devices
 * ```reboot``` - Soft reset the device
 * ```pair``` - Enter pairing mode
-* ```add <address>``` - Manually add a device (Receiver's ```set``` command must be completed first)
+* ```add <address>``` - Manually add a device
 * ```remove``` - Remove last paired device
 * ```exit``` - Exit pairing mode
 * ```clear``` - Clear stored devices
@@ -140,7 +140,7 @@ Note: The LED will blink when you place it flat on each side and will blink cont
 * ```6-side``` - Calibrate 6-side accelerometer
 * ```mag``` - Clear magnetometer calibration
 * ```pair``` - Enter pairing mode
-* ```set <address>``` - Manually set receiver
+* ```set <address>``` - Manually set receiver (Receiver's ```add``` command must be completed first)
 * ```clear``` - Clear pairing data
 * ```dfu``` - Enter DFU bootloader (only available if your device has one)
 * ```uptime``` - Get device uptime
@@ -165,5 +165,6 @@ Status codes consist of one or more status values (added together) listed below:
 * SYS_STATUS_USB_CONNECTED - 8
 * SYS_STATUS_PLUGGED - 16
 * SYS_STATUS_CALIBRATION_RUNNING - 32
+* SYS_STATUS_BUTTON_PRESSED - 64
 
 *Created by Shine Bright ✨, [Depact](https://github.com/Depact) and [Seneral](https://github.com/Seneral)*

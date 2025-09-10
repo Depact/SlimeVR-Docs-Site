@@ -252,8 +252,8 @@ Some of the supported sensor modules are described on the [IMU Comparison page](
                     QMC6309
                 </td>
                 <td>
-                    <a href="https://store.kouno.xyz/products/icm-45686-qmc6309-module">
-                        store.kouno.xyz
+                    <a href="https://shop.slimevr.dev/products/slimevr-mumo-breakout-module-v1-icm-45686-qmc6309">
+                        shop.slimevr.dev
                     </a>
                 </td>
             </tr>
@@ -262,6 +262,17 @@ Some of the supported sensor modules are described on the [IMU Comparison page](
                 <td>
                     <a href="https://moffshop.deyta.de/products/lsm6dsr">
                         moffshop.deyta.de
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Chrysalis <a href="../../diy/imu-comparison.md#icm-45686">ICM-45686</a> +
+                    QMC6309
+                </td>
+                <td>
+                    <a href="https://nekumori.pink/products/chysalis-v1_3">
+                        nekumori.pink
                     </a>
                 </td>
             </tr>
@@ -311,7 +322,7 @@ It is placed on the back of the IMU in the Stacked Smol to avoid shorting out an
 
 <hr/>
 
-*Created by Shine Bright ✨, [Depact](https://github.com/Depact) and [Seneral](https://github.com/Seneral)*
+*Created by Shine Bright ✨, [Depact](https://github.com/Depact), [Aed](https://github.com/Aed-1), and [Seneral](https://github.com/Seneral) with images from [Meia](https://github.com/kounocom) and [Firmata](https://github.com/Firmatorenio)*
 
 <link rel="stylesheet" href="../assets/css/smol-slimes.css" />
 <link rel="stylesheet" href="../assets/css/smol-tracker-schematics.css" />
