@@ -159,6 +159,8 @@ Refer to <a href="./smol-tracker.md#schematics">Smol Schematics -> Antenna (extr
 
 Recommended combination due to good combination of making difficulty and performance. 
 
+##### Components Options
+
 <div class="table-wrapper">
   <table>
     <thead>
