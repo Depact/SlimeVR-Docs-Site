@@ -153,7 +153,47 @@ Consist of a <a href="#-microcontrollers-modified-into-usb-dongles">ProMicro nRF
 
 Refer to <a href="./smol-tracker.md#schematics">Smol Schematics -> Antenna (extra option)</a> for the area to remove and solder the IPEX or SMA connector.
 
+##### LyAll OOTDTY 2.4G/5.8G Dual Band Antenna Receiver (Recommended now)
+
+<img src="../assets\img\smol-receiver\Lyall-brick-receiver.jpg" loading="lazy" class="big-size-image"/>
+
+Recommended combination due to good combination of making difficulty and performance. 
+
 ##### Components Options
+
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Listing</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <img src="../assets\img\smol-receiver\OOTDTY 2.4G-5.8G Dual Band Antenna Receiver.png" loading="lazy" />
+        </td>
+        <td>
+          OOTDTY 5 Pcs 2.4G/5.8G Dual Band Antenna 8DBI High Gain Internal PCB Aerial for WiFi Router WiFi Antenna
+        </td>
+        <td>
+          <ul>
+            <li>
+              <a href="https://pl.aliexpress.com/item/4000298368244.html">
+                AliExpress
+              </a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+##### IPX, SMA conversion combination
 
 <div class="table-wrapper">
   <table>
