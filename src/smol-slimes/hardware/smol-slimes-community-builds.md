@@ -160,7 +160,12 @@ This page is dedicated only to builds that others can build themselves. Builds t
         <td class="case-pcb" data-label="PCB">✅</td>
         <td class="case-battery" data-label="Battery">100 mAh</td>
         <td class="case-dock" data-label="Dock">✅</td>
-        <td class="case-dongle" data-label="Dongle">✖️</td>
+        <td class="case-dongle" data-label="Dongle">
+          <div class="tooltip-text-container">
+            ✅
+            <span class="tooltip-text">Custom case over EByte nrf52840 dongle</span>
+          </div>
+        </td>
       </tr>
       <tr>
         <td class="case-image" data-label="Image">
@@ -248,7 +253,6 @@ This page is dedicated only to builds that others can build themselves. Builds t
         <td class="case-dock" data-label="Dock">✖️</td>
         <td class="case-dongle" data-label="Dongle">✖️</td>
       </tr>
-      <tr>
     </tbody>
   </table>
 </div>
@@ -285,3 +289,12 @@ The making process is as simple as inserting the OTG connectors into the hub.
 - Submit your case by opening a pull request.
 
 _Created by Shine Bright ✨ and [Depact](https://github.com/Depact)_
+
+<style>
+.case-image {
+  min-width: 150px
+}
+</style>
+
+<!-- Table sorting library table-sort-js - https://www.jsdelivr.com/package/npm/table-sort-js -->
+<script src="https://cdn.jsdelivr.net/npm/table-sort-js/table-sort.min.js"></script>
