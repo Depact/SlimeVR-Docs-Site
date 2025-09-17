@@ -291,7 +291,7 @@ The making process is as simple as inserting the OTG connectors into the hub.
 _Created by Shine Bright ✨ and [Depact](https://github.com/Depact)_
 
 <style>
-.case-image {
+.case-image img {
   min-width: 150px
 }
 </style>
