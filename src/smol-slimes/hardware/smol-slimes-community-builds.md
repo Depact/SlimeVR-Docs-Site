@@ -210,7 +210,7 @@ This page is dedicated only to builds that others can build themselves. Builds t
         <td class="case-dock" data-label="Dock">✅</td>
         <td class="case-dongle" data-label="Dongle">✖️</td>
       </tr>
-      <tr>
+      <tr id="LyallUlric-Stacked-SmolSlime-build">
         <td class="case-image" data-label="Image">
           <img
             src="../assets/img/smol-community-builds/Stacked-SmolSlime-by-LyallUlric.webp"
