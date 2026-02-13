@@ -37,6 +37,8 @@ The making process is as simple as inserting the OTG connectors into the hub.
 - OTG connectors keep falling out.
 - Flimsy.
 
+---
+
 ## Contributing
 
 Want to share your own DIY strap design, tip, or resource?  
