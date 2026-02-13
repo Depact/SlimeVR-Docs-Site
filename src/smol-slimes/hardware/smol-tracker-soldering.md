@@ -2,6 +2,10 @@
 
 This page offers step-by-step soldering instructions for assembling your Smol Trackers, with both video and text tutorials. Choose the method that works best for you!
 
+```admonish note
+Guides are contributed by community and differ in details.
+```
+
 ## Table of Contents
 
 * TOC
