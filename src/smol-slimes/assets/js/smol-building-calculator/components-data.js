@@ -67,14 +67,6 @@ export const componentCategories = [
         <sup><a href="smol-tracker.html#-inertial-measurement-units" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "LSM6DSR",
-                description: "Half the price of the ICM-45686, but with slightly more drift",
-                amount: (set) => set,
-                cost: () => 3.52,
-                costAll: (set) => set * 3.52 + 6.7,
-                links: '<a href="https://www.aliexpress.com/wholesale?SearchText=LSM6DSR" target="_blank">AliExpress LSM6DSR</a>',
-            },
-            {
                 name: "ICM-45686",
                 description: "More expensive than the LSM6DSR, but slightly more precise",
                 amount: (set) => set,
