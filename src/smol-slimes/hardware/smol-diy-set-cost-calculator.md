@@ -7,7 +7,7 @@ For better performance, change the selection to the following value:
 - IMU: ICM-45686
 ```
 
-*Prices last checked: 2026-06-05. Store pages were scraped for current pricing; AliExpress prices are approximate.*
+*Prices last checked: 2026-06-05.*
 
 ## Select Number of Trackers
 
