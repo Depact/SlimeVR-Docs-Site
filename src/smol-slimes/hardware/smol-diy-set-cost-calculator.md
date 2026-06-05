@@ -7,6 +7,7 @@ For better performance, change the selection to the following value:
 - IMU: ICM-45686
 ```
 
+*Prices last checked: 2026-06-05. Store pages were scraped for current pricing; AliExpress prices are approximate.*
 
 ## Select Number of Trackers
 
@@ -100,8 +101,6 @@ Once gathered parts those steps remain to build fully functional set:
 1. [Smol Tracker Soldering](./smol-tracker-soldering.md)
 2. [Smol Flashing Firmware](../firmware/smol-flashing-firmware.md)
 3. [Smol Pairing & Calibration](../firmware/smol-pairing-and-calibration.md)
-
-*Prices last checked: 2026-06-05. Store pages were scraped for current pricing; AliExpress prices are approximate.*
 
 <hr/>
 
