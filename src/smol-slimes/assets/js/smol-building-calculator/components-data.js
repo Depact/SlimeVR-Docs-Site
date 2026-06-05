@@ -42,8 +42,8 @@ export const componentCategories = [
                 name: "nRF52840",
                 description: "Includes 20% overage to account for DOA (Dead on Arrival) issues",
                 amount: (set) => Math.ceil(set * 1.2) + " (20% overage)",
-                cost: () => 6.55 / 2,
-                costAll: (set) => Math.ceil(set * 1.2) * (6.55 / 2),
+                cost: () => 8.28 / 2,
+                costAll: (set) => Math.ceil(set * 1.2) * (8.28 / 2),
                 links: '\
                     Available on AliExpress with <code>compatible with nice!nano</code>, <code>SuperMini</code>, or<code>Pro Micro</code> branding.\
                     <ul>\
@@ -78,23 +78,23 @@ export const componentCategories = [
                 name: "ICM-45686",
                 description: "More expensive than the LSM6DSR, but slightly more precise",
                 amount: (set) => set,
-                cost: () => 7.44,
-                costAll: (set) => set * 7.44 + 6.7,
+                cost: () => 6.70,
+                costAll: (set) => set * 6.70 + 6.7,
                 links: '<a href="https://shop.slimevr.dev/products/slimevr-mumo-breakout-module-v1-icm-45686-qmc6309" target="_blank">SlimeVR Mumo Breakout Module V1 (ICM-45686 + QMC6309)</a>',
             },
             {
                 name: "LSM6DSV",
                 amount: (set) => set,
-                cost: () => 9.4,
-                costAll: (set) => set * 9.4 + 5.58,
+                cost: () => 5.45,
+                costAll: (set) => set * 5.45 + 5.58,
                 links: '<a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">Moffshop LSM6DSV</a>',
             },
             {
                 name: "Nekumori Chrysalis",
                 description: "An LSM6DSV shield with a button and RGB LED",
                 amount: (set) => set,
-                cost: () => 6.99,
-                costAll: (set) => set * 6.99 + 5.5,
+                cost: () => 4.39,
+                costAll: (set) => set * 4.39 + 5.5,
                 links: '<a href="https://nekumori.pink/products/chrysalis" target="_blank">Nekumori Chrysalis</a>',
             },
         ],
@@ -317,8 +317,8 @@ export const componentCategories = [
                 name: "🟠 nRF52840 with Wi-Fi Antenna Mod",
                 description: "Range is about 4m and cannot penetrate walls",
                 amount: (set) => calculateRecommendedReceiversAmount(set),
-                cost: () => 6.55 / 2 + 2.7,
-                costAll: (set) => (6.55 / 2 + 2.7) * calculateRecommendedReceiversAmount(set),
+                cost: () => 8.28 / 2 + 2.7,
+                costAll: (set) => (8.28 / 2 + 2.7) * calculateRecommendedReceiversAmount(set),
                 links: '\
                     <a href="smol-receiver.html#option-3-wi-fi-antenna-mod" target="_blank">Wi-Fi Antenna Mod docs reference.</a>\
                     <br/>\
@@ -336,8 +336,8 @@ export const componentCategories = [
                 name: "🟠 nRF52840 with Wire Antenna Mod",
                 description: "Cheapest option with the shortest range.<br/>Range is about 3m and cannot penetrate walls",
                 amount: (set) => calculateRecommendedReceiversAmount(set),
-                cost: () => 6.55 / 2,
-                costAll: (set) => (6.55 / 2) * calculateRecommendedReceiversAmount(set),
+                cost: () => 8.28 / 2,
+                costAll: (set) => (8.28 / 2) * calculateRecommendedReceiversAmount(set),
                 links: '\
                     <a href="./smol-receiver.html#option-2-wire-antenna-mod" target="_blank">Wire Antenna Mod docs reference.</a>\
                     <br/>\

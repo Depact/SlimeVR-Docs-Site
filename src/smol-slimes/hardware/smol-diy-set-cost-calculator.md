@@ -101,6 +101,8 @@ Once gathered parts those steps remain to build fully functional set:
 2. [Smol Flashing Firmware](../firmware/smol-flashing-firmware.md)
 3. [Smol Pairing & Calibration](../firmware/smol-pairing-and-calibration.md)
 
+*Prices last checked: 2026-06-05. Store pages were scraped for current pricing; AliExpress prices are approximate.*
+
 <hr/>
 
 *Created by Shine Bright ✨ and [Depact](https://github.com/Depact)*
