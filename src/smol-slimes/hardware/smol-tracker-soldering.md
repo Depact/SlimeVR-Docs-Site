@@ -104,7 +104,7 @@ Use the `info` command in a serial terminal to check if the IMU is detected. If 
 <img src="..\assets\img\soldering/Ibis-IMU-Soldering-fixture.webp" loading="lazy" class="small-size-image"/>
 
 You can optionally use the Ibis soldering fixture to hold your IMU and headers securely in place while soldering.
-Note: That this fixture does **not** work for every IMU, as it is specifically designed for the LSM6DSR/LSM6DSV from Deyta's Moffshop and ICM-45686 from SlimeVR Store.
+Note: That this fixture does **not** work for every IMU, as it is specifically designed for the LSM6DSV (and discontinued LSM6DSR) from Deyta's Moffshop and ICM-45686 from SlimeVR Store.
 
 [Download STL file](https://github.com/brisfknibis/ibis-trackers/blob/main/3D%20Print%20Models/Solder%20Cube.stl)
 

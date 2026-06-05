@@ -72,7 +72,9 @@ export const componentCategories = [
                 amount: (set) => set,
                 cost: () => 3.52,
                 costAll: (set) => set * 3.52 + 6.7,
-                links: '<a href="https://moffshop.deyta.de/products/lsm6dsr" target="_blank">Moffshop LSM6DSR + QMC6309</a>',
+                links: '\
+                    Discontinued from Moffshop, replaced by <a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">LSM6DSV at €5.00</a>.\
+                    <br/>Still available on <a href="https://www.aliexpress.com/wholesale?SearchText=LSM6DSR" target="_blank">AliExpress</a>.',
             },
             {
                 name: "ICM-45686",

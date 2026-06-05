@@ -37,7 +37,7 @@
                     'amount': (set) => set,
                     'cost': 3.15,
                     'costAll': (set) => set * 3.35 + 6.70,
-                    'links': '<a href="https://moffshop.deyta.de/products/lsm6dsr">Moffshop LSM6DSR + QMC6309</a>, <b>experimental</b>.'
+                    'links': 'Discontinued from Moffshop, replaced by <a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">LSM6DSV at €5.00</a>. Still available on <a href="https://www.aliexpress.com/wholesale?SearchText=LSM6DSR">AliExpress</a>, <b>experimental</b>.'
                 },
                 {
                     'name': 'BNO085',
