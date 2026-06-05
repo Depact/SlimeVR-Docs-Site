@@ -19,77 +19,77 @@
             'choices': [
                 //Prices are based on the seller "Simple Robot Store" for AliExpress links.
                 {
-                    'name': 'ICM-45686',
+                    'name': '🟢 ICM-45686',
                     'amount': (set) => set,
                     'cost': 6.70,
                     'costAll': (set) => set * 6.70 + 6.70,
                     'links': '<a href="https://shop.slimevr.dev/products/slimevr-mumo-breakout-module-v1-icm-45686-qmc6309">SlimeVR Mumo Breakout Module V1 (ICM-45686 + QMC6309)</a>.'
                 },
                 {
-                    'name': 'LSM6DSV',
+                    'name': '🟢 LSM6DSV',
                     'amount': (set) => set,
                     'cost': 8.47,
                     'costAll': (set) => set * 8.47 + 5.58,
                     'links': '<a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">Moffshop LSM6DSV</a>.'
                 },
                 {
-                    'name': 'LSM6DSR',
+                    'name': '🟢 LSM6DSR',
                     'amount': (set) => set,
                     'cost': 3.15,
                     'costAll': (set) => set * 3.35 + 6.70,
                     'links': '<a href="https://www.aliexpress.com/wholesale?SearchText=LSM6DSR">AliExpress LSM6DSR</a>, <b>experimental</b>.'
                 },
                 {
-                    'name': 'BNO085',
+                    'name': '🔴 BNO085',
                     'amount': (set) => set,
                     'cost': 11,
                     'costAll': (set) => set * 11 + 6,
                     'links': '<a href="https://www.mouser.com/c/?q=BNO085" target="_blank">Adafruit BNO085</a>, <b>Not recommended for new designs.</b>'
                 },
                 {
-                    'name': 'BMI160',
+                    'name': '🚫 BMI160',
                     'amount': (set) => set,
                     'cost': 1.42,
                     'costAll': (set) => set * 1.42 + 2.67,
                     'links': '<a href="https://www.aliexpress.com/wholesale?SearchText=BMI160">AliExpress BMI160</a>, <b>Not recommended for new designs.</b>'
                 },
                 {
-                    'name': 'ICM20948',
+                    'name': '🔴 ICM20948',
                     'amount': (set) => set,
                     'cost': 17.40,
                     'costAll': (set) => set * 17.40 + 8.89,
                     'links': '<a href="https://www.mouser.com/c/?q=ICM20948">Mouser ICM20948</a>. The most commonly chosen options are either the Pimoroni or Adafruit ICM20948. Please note that any orders you place will be <b>backordered</b>, potentially meaning a wait of <u>upwards of 3 months</u> before shipping. <b>Not recommended for new designs.</b>'
                 },
                 {
-                    'name': 'MPU9250',
+                    'name': '🚫 MPU9250',
                     'amount': (set) => set,
                     'cost': 4.75,
                     'costAll': (set) => set * 4.75 + 2.73,
                     'links': '<a href="https://www.aliexpress.com/wholesale?SearchText=MPU9250">AliExpress MPU9250</a>. Buyer beware: large amount of fakes. <b>Not recommended for new designs.</b>'
                 },
                 {
-                    'name': 'MPU+QMC5883L',
+                    'name': '🚫 MPU+QMC5883L',
                     'amount': (set) => set,
                     'cost': 1.04+1.23,
                     'costAll': (set) => (set * (1.04+1.23)) + 2.67,
                     'links': '<a href="https://www.aliexpress.com/wholesale?SearchText=MPU6050">AliExpress MPU6050</a> and <a href="https://www.aliexpress.com/wholesale?SearchText=QMC5883L">AliExpress QMC5883L</a>. Performance should apprxomiately match an MPU9250, but please note that this is <b>Experimental</b>. <b>Not recommended for new designs.</b>'
                 },
                 {
-                    'name': 'BNO055',
+                    'name': '🔴 BNO055',
                     'amount': (set) => set,
                     'cost': 17,
                     'costAll': (set) => set * 17 + 2.73,
                     'links': '<a href="https://www.aliexpress.com/wholesale?SearchText=BNO055">AliExpress BNO055</a>. <b>Not recommended for new designs.</b>'
                 },
                 {
-                    'name': 'MPU6500',
+                    'name': '🚫 MPU6500',
                     'amount': (set) => set,
                     'cost': 0.95,
                     'costAll': (set) => set * 0.95 + 2.67,
                     'links': '<a href="https://www.aliexpress.com/wholesale?SearchText=MPU6500">AliExpress MPU6500</a>. <b>Not recommended for new designs.</b>'
                 },
                 {
-                    'name': 'MPU6050',
+                    'name': '🚫 MPU6050',
                     'amount': (set) => set,
                     'cost': 1.04,
                     'costAll': (set) => set * 1.04 + 2.67,

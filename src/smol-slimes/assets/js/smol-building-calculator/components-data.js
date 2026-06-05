@@ -67,7 +67,7 @@ export const componentCategories = [
         <sup><a href="smol-tracker.html#-inertial-measurement-units" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "ICM-45686",
+                name: "🟢 ICM-45686",
                 description: "More expensive than the LSM6DSR, but slightly more precise",
                 amount: (set) => set,
                 cost: () => 6.70,
@@ -75,14 +75,14 @@ export const componentCategories = [
                 links: '<a href="https://shop.slimevr.dev/products/slimevr-mumo-breakout-module-v1-icm-45686-qmc6309" target="_blank">SlimeVR Mumo Breakout Module V1 (ICM-45686 + QMC6309)</a>',
             },
             {
-                name: "LSM6DSV",
+                name: "🟢 LSM6DSV",
                 amount: (set) => set,
                 cost: () => 5.45,
                 costAll: (set) => set * 5.45 + 5.58,
                 links: '<a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">Moffshop LSM6DSV</a>',
             },
             {
-                name: "Nekumori Chrysalis",
+                name: "🟢 Nekumori Chrysalis",
                 description: "An LSM6DSV shield with a button and RGB LED",
                 amount: (set) => set,
                 cost: () => 4.39,
