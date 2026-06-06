@@ -21,10 +21,11 @@ An extremely minimal dock setup using a USB hub and OTG connectors.
 
 #### Parts
 
-| Part Description                        | Link                                                            | Notes                                             |
-| --------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------- |
-| 7-Port USB 3.0 Hub| [AliExpress](https://aliexpress.com/item/1005008981599421.html) | Any USB 3.0 hub with sufficient ports should work |
-| Type-C Male to USB-A Male OTG Connector | [AliExpress](https://aliexpress.com/item/1005007396270447.html) | Can be replaced with short USB-A to USB-C cables|
+| Part Description                        | Link                                                            | Notes                                             | Price    |
+| --------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------- | -------- |
+| 7-Port USB 3.0 Hub| [AliExpress (7 Ports)](https://aliexpress.com/item/1005008981599421.html) | Any USB 3.0 hub with sufficient ports should work | $0.99    |
+| Type-C Male to USB-A Male OTG Connector | [AliExpress (Type C Ma to USB Ma)](https://aliexpress.com/item/1005007396270447.html) | Can be replaced with short USB-A to USB-C cables| $0.38    |
+| **Total per dock**                      |                                                                 |                                                   | **$1.37** |
 
 #### Assembly
 

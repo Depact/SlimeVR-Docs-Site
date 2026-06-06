@@ -1,13 +1,14 @@
 # Smol DIY Set Cost Calculator
 
+- See the [IMU Comparison page](../../diy/imu-comparison.md) for detailed tiered recommendations.
+- Prices last checked: 2026-06-05.
+
 ```admonish info
 Default selected values are chosen to offer the best price-to-performance balance.
 
 For better performance, change the selection to the following value:
 - IMU: ICM-45686
 ```
-
-*Prices last checked: 2026-06-05.*
 
 ## Select Number of Trackers
 
@@ -17,7 +18,7 @@ Before you start, decide on [how many trackers you may need](../../../slimevr101
   <div class="radio-card">
     <input type="radio" name="diy-set" value="5" id="trackers-5" />
     <label for="trackers-5">
-      <div class="radio-card-name">Lower-Body Set</div>
+      <div class="radio-card-name">🟡 Lower-Body Set</div>
       <div class="radio-card-desc">5 IMUs &mdash; Casual VR users</div>
       <div class="radio-card-desc">
         Provides positional tracking for legs and spine. Limited tracking for foot orientation and lower spine bending.
@@ -27,7 +28,7 @@ Before you start, decide on [how many trackers you may need](../../../slimevr101
   <div class="radio-card">
     <input type="radio" name="diy-set" value="6" id="trackers-6" checked="checked" />
     <label for="trackers-6">
-      <div class="radio-card-name">Core Set</div>
+      <div class="radio-card-name">🟢 Core Set</div>
       <div class="radio-card-desc">6 IMUs &mdash; Users who want better stability</div>
       <div class="radio-card-desc">
         Adds an extra spine tracker for improved stability, especially when sitting, lying down, or bending over.
@@ -37,7 +38,7 @@ Before you start, decide on [how many trackers you may need](../../../slimevr101
   <div class="radio-card">
     <input type="radio" name="diy-set" value="8" id="trackers-8" />
     <label for="trackers-8">
-      <div class="radio-card-name">Enhanced Core Set</div>
+      <div class="radio-card-name">🟢 Enhanced Core Set</div>
       <div class="radio-card-desc">8 IMUs &mdash; Users who sit or lie down often</div>
       <div class="radio-card-desc">
         Adds foot movement tracking for more expressive, emotive poses when seated or lying down.
@@ -47,7 +48,7 @@ Before you start, decide on [how many trackers you may need](../../../slimevr101
   <div class="radio-card">
     <input type="radio" name="diy-set" value="10" id="trackers-10" />
     <label for="trackers-10">
-      <div class="radio-card-name">Full-Body Set</div>
+      <div class="radio-card-name">🟢 Full-Body Set</div>
       <div class="radio-card-desc">10 IMUs &mdash; Dancers, role-players, immersive users</div>
       <div class="radio-card-desc">
         Enables independent elbow movement, providing more realistic upper-body motion and increased immersion in VR.
@@ -57,7 +58,7 @@ Before you start, decide on [how many trackers you may need](../../../slimevr101
   <div class="radio-card">
     <input type="radio" name="diy-set" value="16" id="trackers-16" />
     <label for="trackers-16">
-      <div class="radio-card-name">Deluxe Tracker Set</div>
+      <div class="radio-card-name">🟢 Deluxe Tracker Set</div>
       <div class="radio-card-desc">16 IMUs &mdash; Motion capture professionals, animators</div>
       <div class="radio-card-desc">
         Can be used for motion capture without VR gear, split into two Enhanced Core Sets, or customized as needed for flexibility and precision.
@@ -76,7 +77,7 @@ Before you start, decide on [how many trackers you may need](../../../slimevr101
                 <th style="width:70%">Choice</th>
                 <th>Amount</th>
                 <th>Cost per one</th>
-                <th>Cost with Shipping</th>
+                <th>Cost Total</th>
                 <th style="min-width: 200px">Quick Link</th>
             </tr>
         </thead>

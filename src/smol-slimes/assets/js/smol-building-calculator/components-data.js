@@ -6,6 +6,12 @@
 
 export const recommendedTrackersPerReceiver = 8;
 
+// TENSTAR NRF52840 2-pack → $7.16 (2pcs Red NRF52840)
+export const nrf52840_2Pack_Price = 7.16;
+// 401230 110mAh 10pcs — unavailable (geo-blocked EU)
+export const battery_10Pack_Price = 8.49;
+
+
 function calculateRecommendedReceiversAmount(set) {
     return Math.max(1, Math.ceil(set / recommendedTrackersPerReceiver));
 }
@@ -40,17 +46,18 @@ export const componentCategories = [
         choices: [
             {
                 name: "nRF52840",
-                description: "Includes 20% overage to account for DOA (Dead on Arrival) issues",
+                description: "Includes 20% overage to account for DOA (Dead on Arrival) issues.",
                 amount: (set) => Math.ceil(set * 1.2) + " (20% overage)",
-                cost: () => 8.28 / 2,
-                costAll: (set) => Math.ceil(set * 1.2) * (8.28 / 2),
+                cost: () => nrf52840_2Pack_Price / 2,
+                costAll: (set) => Math.ceil(set * 1.2) * (nrf52840_2Pack_Price / 2),
                 links: '\
                     Available on AliExpress with <code>compatible with nice!nano</code>, <code>SuperMini</code>, or<code>Pro Micro</code> branding.\
                     <ul>\
                         <li>\
-                            <a href="https://pl.aliexpress.com/item/1005007738886550.html" target="_blank">AliExpress TENSTAR 2pcs pack</a>\
+                            <a href="https://pl.aliexpress.com/item/1005007738886550.html" target="_blank">AliExpress (2pcs Red NRF52840)</a>\
                         </li>\
-                    </ul>',
+                    </ul>\
+                    <br/><br/><span>$7.16 per 2-pack ($3.58/board).</span>',
             },
             {
                 name: "Sourced elsewhere",
@@ -68,26 +75,26 @@ export const componentCategories = [
         choices: [
             {
                 name: "🟢 ICM-45686",
-                description: "More expensive than the LSM6DSR, but slightly more precise",
+                description: "",
                 amount: (set) => set,
                 cost: () => 6.70,
                 costAll: (set) => set * 6.70 + 6.7,
-                links: '<a href="https://shop.slimevr.dev/products/slimevr-mumo-breakout-module-v1-icm-45686-qmc6309" target="_blank">SlimeVR Mumo Breakout Module V1 (ICM-45686 + QMC6309)</a>',
+                links: '<a href="https://shop.slimevr.dev/products/slimevr-mumo-breakout-module-v1-icm-45686-qmc6309" target="_blank">SlimeVR Mumo Breakout Module V1 (ICM-45686 + QMC6309)</a><br/><br/><span>$6.70 per IMU. Cost includes one extra for receiver spare (+$6.70).</span>',
             },
             {
                 name: "🟢 LSM6DSV",
                 amount: (set) => set,
-                cost: () => 5.45,
-                costAll: (set) => set * 5.45 + 5.58,
-                links: '<a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">Moffshop LSM6DSV</a>',
+                cost: () => 8.93,
+                costAll: (set) => set * 8.93 + 5.58,
+                links: '<a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">Moffshop LSM6DSV</a><br/><br/><span>$8.93 per IMU. Cost includes one extra for receiver spare (+$5.58).</span>',
             },
             {
-                name: "🟢 Nekumori Chrysalis",
+                name: "🟢 Nekumori Chrysalis LSM6DSV",
                 description: "An LSM6DSV shield with a button and RGB LED",
                 amount: (set) => set,
                 cost: () => 4.39,
                 costAll: (set) => set * 4.39 + 5.5,
-                links: '<a href="https://nekumori.pink/products/chrysalis" target="_blank">Nekumori Chrysalis</a>',
+                links: '<a href="https://nekumori.pink/products/chrysalis" target="_blank">Nekumori Chrysalis</a><br/><br/><span>$4.39 per IMU. Cost includes one extra for receiver spare (+$5.50).</span>',
             },
         ],
     },
@@ -97,11 +104,11 @@ export const componentCategories = [
         <sup><a href="smol-tracker.html#-buttons" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "3X4X2MM SMD 2-PIN",
+                name: "3X4X2MM SMD 2-PIN 🚫 unavailable",
                 amount: (set) => set,
                 cost: () => 1.53 / 50,
                 costAll: () => 1.53 / 50 + 0.99,
-                links: '<a href="https://www.aliexpress.com/item/1005007004194449.html" target="_blank">AliExpress 3x4x2mm 2pin, 50 pcs</a>',
+                links: '<a href="https://www.aliexpress.com/item/1005007004194449.html" target="_blank">AliExpress 🚫 unavailable</a><br/><br/><span>$1.53 for 50pcs, plus $0.99 shipping.</span>',
             },
             {
                 name: "Sourced elsewhere",
@@ -118,12 +125,12 @@ export const componentCategories = [
         <sup><a href="smol-tracker.html#-batteries" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "401230 3.7V 110 mAh Battery",
+                name: "401230 3.7V 110 mAh Battery 🚫 unavailable",
                 description: "Most community cases are designed to accommodate this battery.",
                 amount: (set) => set,
-                cost: () => 8.49 / 10,
-                costAll: (set) => set * (8.49 / 10) + 5.2,
-                links: '<a href="https://www.aliexpress.com/item/714331867.html" target="_blank">AliExpress 401230 3.7V 110mAh Battery, 10 pcs</a>',
+                cost: () => battery_10Pack_Price / 10,
+                costAll: (set) => set * (battery_10Pack_Price / 10) + 5.2,
+                links: '<a href="https://www.aliexpress.com/item/714331867.html" target="_blank">AliExpress 🚫 unavailable</a><br/><br/><span>$8.49 per 10-pack ($0.85/battery). Cost includes shipping (+$5.20).</span>',
             },
             {
                 name: "Sourced elsewhere",
@@ -141,9 +148,9 @@ export const componentCategories = [
                 name: "Width: 20MM",
                 description: "Do not skip using Kapton tape—it's essential to prevent short circuits when building stacked setups.",
                 amount: () => 1,
-                cost: () => 1.37,
-                costAll: () => 1.37 + 0.99,
-                links: '<a href="https://www.aliexpress.com/item/1005007518587827.html" target="_blank">AliExpress 5-40mm Kapton Tape</a>',
+                cost: () => 0.99,
+                costAll: () => 0.99 + 0.99,
+                links: '<a href="https://www.aliexpress.com/item/1005007518587827.html" target="_blank">AliExpress (Brown/33M/0.05MM/20MM)</a><br/><br/><span>$0.99 per roll, plus $0.99 shipping.</span>',
             },
             {
                 name: "Sourced elsewhere",
@@ -160,21 +167,21 @@ export const componentCategories = [
             <sup><a href="smol-tracker.html#-copper-wire-for-wire-antenna-mod" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "24-26 AWG, 5m",
+                name: "🟢 22 AWG, 2m (AliExpress)",
                 amount: () => 1,
-                cost: () => 1.85,
-                costAll: () => 1.85 + 1.68,
-                links: '<a href="https://www.aliexpress.com/item/1005002632016529.html" target="_blank">AliExpress 24-26 AWG 5m</a>',
+                cost: () => 3.78,
+                costAll: () => 3.78 + 1.68,
+                links: '<a href="https://www.aliexpress.com/item/1005002632016529.html" target="_blank">AliExpress (22 AWG, 2m)</a><br/><br/><span>$3.78 for 2m wire, plus $1.68 shipping.</span>',
             },
             {
-                name: "26AWG, 10m spools - 6 pcs",
+                name: "🟡 26AWG, 10m spools - 6 pcs (Amazon)",
                 amount: () => 1,
                 cost: () => 14.99,
                 costAll: () => 14.99,
                 links: '<a href="https://www.amazon.com/dp/B07G2LRX68" target="_blank">Amazon 26 AWG, 10m spools</a>',
             },
             {
-                name: "Sourced from Ethernet cable",
+                name: "🟢 Sourced from Ethernet cable",
                 amount: () => 1,
                 cost: () => 3,
                 costAll: () => 3,
@@ -195,12 +202,13 @@ export const componentCategories = [
         <sup><a href="smol-tracker.html#-cases" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "3D printed, approximate cost",
+                name: "🟢 3D printed, approximate cost",
                 amount: (set) => set,
                 cost: () => 2,
                 costAll: (set) => set * 2,
                 links: '\
-                    Files of case designs can be found on <a href="smol-slimes-community-builds.html" target="_blank">community builds page</a>.<br/>Stacked designs are recommended.',
+                    Files of case designs can be found on <a href="smol-slimes-community-builds.html" target="_blank">community builds page</a>.<br/><br/>Stacked designs are recommended.\
+                    <br/><br/><span>$2 per case (3D print material estimate).</span>',
             },
             {
                 name: "Sourced elsewhere",
@@ -217,62 +225,45 @@ export const componentCategories = [
         <sup><a href="smol-tracker.html#-straps" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "DIY, Depact V2",
+                name: "🟢 DIY, Depact V3",
                 amount: (set) => set,
-                cost: (set) => 3.66 + +(set > 9 ? 2 : 1) * 5.07 + 12.62 + 0.99,
-                costAll: (set) => 3.66 + +(set > 9 ? 2 : 1) * 5.07 + 12.62 + 0.99,
-                links: '\
-                    <a href="smol-slimes-community-straps.html#depact-v2-smol-strap" target="_blank">Depact V2 strap docs</a>\
-                    <br/>\
-                    Parts:\
-                    <ul>\
-                        <li>\
-                            <a href="https://www.aliexpress.com/item/1005004792179605.html" target="_blank">$3.61 GoPro Chest Strap</a>\
-                        </li>\
-                        <li>\
-                            <a href="https://pl.aliexpress.com/item/32804319193.html" target="_blank">$5.07 32mm buckles 10pcs</a>\
-                        </li>\
-                        <li>\
-                            <a href="https://www.aliexpress.com/item/1005003917576160.html" target="_blank">$12.62 30mm, 5m band with latex webbing</a>\
-                        </li>\
-                        <li>\
-                            Needle and thread\
-                        </li>\
-                    </ul>',
+                cost: (set) => 0.99 + Math.ceil(set / 6) * 1.14,
+                costAll: (set) => 0.99 + Math.ceil(set / 6) * 1.14,
+                links: '<a href="smol-slimes-community-straps.html" target="_blank">Depact V3 strap docs</a><br/><br/><span>$0.99 GoPro chest strap (one-time) + $1.14 per 5m band roll (~6 straps).</span>',
             },
             {
-                name: "Generic AliExpress straps + GoPro Chest Strap",
+                name: "🟡 Generic AliExpress straps + GoPro Chest Strap",
                 amount: (set) => Math.ceil(set / 5),
-                cost: () => 5 + 3.66,
-                costAll: (set) => Math.ceil(set / 5) * 2.67 + 2.77 + 3.66,
+                cost: () => 5 + 0.99,
+                costAll: (set) => Math.ceil(set / 5) * 2.67 + 2.77 + 0.99,
                 links: '\
                     Parts:\
                     <ul>\
-                        <li><a href="https://aliexpress.com/item/1005001908740631.html" target="_blank">AliExpress straps</a>\
+                        <li><a href="https://aliexpress.com/item/1005001908740631.html" target="_blank">AliExpress (25mm×200-400mm, 2-5pcs)</a>\
                             <br/>Most cases are designed for 30mm wide straps.\
                         </li>\
-                        <li><a href="https://www.aliexpress.com/item/1005004792179605.html" target="_blank">GoPro Chest Strap</a></li>\
+                        <li><a href="https://www.aliexpress.com/item/1005004792179605.html" target="_blank">$0.99 GoPro Chest Strap</a></li>\
                     </ul>',
             },
             {
-                name: "Generic AliExpress straps",
+                name: "🟡 Generic AliExpress straps",
                 amount: (set) => Math.ceil(set / 5),
                 cost: () => 5,
                 costAll: (set) => Math.ceil(set / 5) * 2.67 + 2.77,
                 links: '\
                     Parts:\
                     <ul>\
-                        <li><a href="https://aliexpress.com/item/1005001908740631.html" target="_blank">AliExpress straps</a>\
+                        <li><a href="https://aliexpress.com/item/1005001908740631.html" target="_blank">AliExpress</a>\
                             <br/>Most cases are designed for 30mm wide straps.\
                         </li>\
                     </ul>',
             },
             {
-                name: "Generic Amazon straps",
+                name: "🟡 Generic Amazon straps",
                 amount: (set) => (set < 5 ? 1 : 2),
                 cost: () => 9.0,
                 costAll: (set) => (set < 5 ? 1 : 2) * 9.0,
-                links: '<a href="https://www.amazon.com/dp/B09T5YDMTR/" target="_blank">Amazon straps</a>',
+                links: '<a href="https://www.amazon.com/dp/B09T5YDMTR/" target="_blank">Amazon straps</a><br/><br/><span>$9 per pack. 1 pack for under 5 trackers, 2 packs for 5+.</span>',
             },
             {
                 name: "Sourced elsewhere",
@@ -290,58 +281,51 @@ export const componentCategories = [
         choices: [
             {
                 name: "🟢 HolyIOT-21017",
-                description: "Best performance option.<br/>Good signal over 4m, even through walls, but is the most expensive",
+                description: "Best performance option.<br/>Good signal over 4m, even through walls, but is the most expensive.",
                 amount: (set) => calculateRecommendedReceiversAmount(set),
-                cost: () => 11 + 0.99,
-                costAll: (set) => (11 + 0.99) * calculateRecommendedReceiversAmount(set),
-                links: '\
-                    <a href="smol-receiver.html#HolyIOT" target="_blank">HolyIOT-21017 docs reference.</a>\
-                    <ul>\
-                        <li>\
-                            <a href="https://www.aliexpress.com/item/1005004673179004.html">AliExpress</a>\
-                        </li>\
-                        <li>\
-                            <a href="https://holyiot.en.alibaba.com/search/product?SearchText=HOLYIOT-21017-nRF52840">Alibaba</a>\
-                        </li>\
-                    </ul>',
+                cost: () => 16.17,
+                costAll: (set) => 16.17 * calculateRecommendedReceiversAmount(set),
+                links: '<a href="https://www.aliexpress.com/item/1005004673179004.html">AliExpress</a><br/><br/><span>$16.17 per receiver (one per 8 trackers, min 1).</span>',
             },
             {
                 name: "🟠 nRF52840 with Wi-Fi Antenna Mod",
                 description: "Range is about 4m and cannot penetrate walls",
                 amount: (set) => calculateRecommendedReceiversAmount(set),
-                cost: () => 8.28 / 2 + 2.7,
-                costAll: (set) => (8.28 / 2 + 2.7) * calculateRecommendedReceiversAmount(set),
+                cost: () => nrf52840_2Pack_Price / 2 + 3.14,
+                costAll: (set) => (nrf52840_2Pack_Price / 2 + 3.14) * calculateRecommendedReceiversAmount(set),
                 links: '\
                     <a href="smol-receiver.html#option-3-wi-fi-antenna-mod" target="_blank">Wi-Fi Antenna Mod docs reference.</a>\
                     <br/>\
                     Parts:\
                     <ul>\
                         <li>\
-                            <a href="https://pl.aliexpress.com/item/1005007738886550.html" target="_blank">AliExpress TENSTAR 2pcs pack</a>\
+                            <a href="https://pl.aliexpress.com/item/1005007738886550.html" target="_blank">AliExpress (2pcs Red NRF52840)</a>\
                         </li>\
                         <li>\
-                            <a href="https://pl.aliexpress.com/item/4000298368244.html" target="_blank">AliExpress OOTDTY 5 Pcs 2.4G/5.8G Dual Band Antenna</a>\
+                            <a href="https://pl.aliexpress.com/item/4000298368244.html" target="_blank">AliExpress (5PCS)</a>\
                         </li>\
-                    </ul>',
+                    </ul>\
+                    <br/><br/><span>$7.16/2pack / 2 = $3.58/board + $3.14 antenna = $6.72 per receiver.</span>',
             },
             {
                 name: "🟠 nRF52840 with Wire Antenna Mod",
                 description: "Cheapest option with the shortest range.<br/>Range is about 3m and cannot penetrate walls",
                 amount: (set) => calculateRecommendedReceiversAmount(set),
-                cost: () => 8.28 / 2,
-                costAll: (set) => (8.28 / 2) * calculateRecommendedReceiversAmount(set),
+                cost: () => nrf52840_2Pack_Price / 2,
+                costAll: (set) => (nrf52840_2Pack_Price / 2) * calculateRecommendedReceiversAmount(set),
                 links: '\
                     <a href="./smol-receiver.html#option-2-wire-antenna-mod" target="_blank">Wire Antenna Mod docs reference.</a>\
                     <br/>\
                     Parts:\
                     <ul>\
                         <li>\
-                            <a href="https://pl.aliexpress.com/item/1005007738886550.html">AliExpress TENSTAR 2pcs pack</a>\
+                            <a href="https://pl.aliexpress.com/item/1005007738886550.html">AliExpress (2pcs Red NRF52840)</a>\
                         </li>\
                         <li>\
                             Use the wire from the wire for antenna mod\
                         </li>\
-                    </ul>',
+                    </ul>\
+                    <br/><br/><span>$7.16/2pack / 2 = $3.58 per board (wire from wire mod purchased separately).</span>',
             },
             {
                 name: "Sourced elsewhere",
@@ -363,23 +347,11 @@ export const componentCategories = [
                 links: "",
             },
             {
-                name: "Depact Smol Sudo Dock",
+                name: "🟡 Depact Smol Sudo Dock",
                 amount: (set) => Math.ceil(set / 7),
-                cost: (set) => Math.ceil(set / 7) * 6.38 + set * 0.36,
-                costAll: (set) => Math.ceil(set / 7) * 6.38 + set * 0.36,
-                links: '\
-                    <a href="smol-slimes-community-builds.html#depact-smol-sudo-dock" target="_blank">Depact Smol Sudo Dock docs reference.</a>\
-                    <br/>\
-                    Parts:\
-                    <ul>\
-                        <li>\
-                            <a href="https://aliexpress.com/item/1005008981599421.html" target="_blank">7 Ports USB Hub</a>\
-                        </li>\
-                        <li>\
-                            <a href="https://aliexpress.com/item/1005007396270447.html" target="_blank">Type-C Male to USB-A Male OTG Connector\
-                            </a>\
-                        </li>\
-                    </ul>',
+                cost: (set) => Math.ceil(set / 7) * 0.99 + set * 0.38,
+                costAll: (set) => Math.ceil(set / 7) * 0.99 + set * 0.38,
+                links: '<a href="../community/smol-slimes-community-docks.html#depact-smol-sudo-dock" target="_blank">Depact Smol Sudo Dock docs</a><br/><br/><span>$0.99 per USB hub (one per 7 trackers) + $0.38 OTG adapter per tracker.</span>',
             },
         ],
     },

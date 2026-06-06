@@ -7,3 +7,6 @@ vendor
 
 # direnv was taking by the nix gang
 .direnv
+
+node_modules/
+

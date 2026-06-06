@@ -1,0 +1,26 @@
+{
+  "name": "slimevr-docs-site",
+  "version": "1.0.0",
+  "description": "Official SlimeVR Documentation: https://docs.slimevr.dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Depact/SlimeVR-Docs-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Depact/SlimeVR-Docs-Site/issues"
+  },
+  "homepage": "https://github.com/Depact/SlimeVR-Docs-Site#readme",
+  "dependencies": {
+    "puppeteer": "^25.1.0"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.8"
+  }
+}

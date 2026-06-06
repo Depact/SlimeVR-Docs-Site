@@ -105,7 +105,7 @@
                     'amount': () => tracker,
                     'cost': 3.66,
                     'costAll': () => tracker*3.19 + 5.33,
-                    'links': '<a href="https://www.aliexpress.us/item/3256803961495200.html">AliExpress 804040, 5 pcs</a> or <a href="https://www.aliexpress.com/item/1005002559604104.html">AliExpress 804040, 10 pcs</a>. Pricing is approximate.'
+                    'links': '<a href="https://www.aliexpress.us/item/3256803961495200.html">AliExpress 🚫 unavailable</a> or <a href="https://www.aliexpress.com/item/1005002559604104.html">AliExpress 🚫 unavailable</a>.'
                 },
                 {
                     'name': '1200 mAh 903052 Li-Po - 5 pcs',
@@ -119,7 +119,7 @@
                     'amount': () => tracker,
                     'cost': 3 + 0.27,
                     'costAll': () => tracker * (3 + 0.27) + (1.89),
-                    'links': '<a href="https://www.aliexpress.com/wholesale?SearchText=18650+cell">AliExpress 18650 cell</a> and <a href="https://www.aliexpress.us/item/3256801521575042.html">AliExpress 18650 holder</a>. Buyer beware: rated capacities are likely inaccurate.'
+                    'links': '<a href="https://www.aliexpress.com/wholesale?SearchText=18650+cell">AliExpress 18650 cell</a> and <a href="https://www.aliexpress.us/item/3256801521575042.html">AliExpress (X4 Slot)</a>. Buyer beware: rated capacities are likely inaccurate.'
                 },
                 {
                     'name': 'Sourced elsewhere',
@@ -138,7 +138,7 @@
                     'amount': () => tracker,
                     'cost': 0.36,
                     'costAll': () => tracker*0.36 + 2.07,
-                    'links': '<a href="https://www.aliexpress.com/item/32649780468.html">AliExpress TP4056</a>'
+                    'links': '<a href="https://www.aliexpress.com/item/32649780468.html">AliExpress (18650 mini / type-c / micro)</a>'
                 },
                 {
                     'name': 'TP4056 USB charging board - 10 pcs',
@@ -162,9 +162,9 @@
                 {
                     'name': 'SS22F32 switches - 10 pcs',
                     'amount': () => 1,
-                    'cost': 2.36,
-                    'costAll': () => 2.36,
-                    'links': '<a href="https://www.aliexpress.com/item/32975535599.html">AliExpress SS22F32 switches</a>'
+                    'cost': 1.97,
+                    'costAll': () => 1.97,
+                    'links': '<a href="https://www.aliexpress.com/item/32975535599.html">AliExpress</a>'
                 },
                 {
                     'name': 'SS22F32 switches - 10 pcs (Alt)',
@@ -197,7 +197,7 @@
                     'amount': () => 1,
                     'cost': 0.62,
                     'costAll': () => 0.62 + 2.21,
-                    'links': '<a href="https://www.aliexpress.us/item/3256801365779334.html">AliExpress 1N5817 diodes.</a> Optional component for battery protection.'
+                    'links': '<a href="https://www.aliexpress.us/item/3256801365779334.html">AliExpress (1N5817)</a>. Optional component for battery protection.'
                 },
                 {
                     'name': '1N5817 diodes - 100 pcs',
@@ -223,7 +223,7 @@
                     'amount': () => 1,
                     'cost': 1.96,
                     'costAll': () => 1.96 + 1.29,
-                    'links': '<a href="https://www.aliexpress.us/item/3256802808441054.html">AliExpress 180K ohm resistors.</a> Optional component for checking battery percentage.'
+                    'links': '<a href="https://www.aliexpress.us/item/3256802808441054.html">AliExpress (100pcs 180K ohms)</a>. Optional component for checking battery percentage.'
                 },
                 {
                     'name': '180K ohm resistors - 100 pcs (Alt)',
@@ -256,7 +256,7 @@
                     'amount': () => 1,
                     'cost': 1.85,
                     'costAll': () => 1.85+1.68,
-                    'links': '<a href="https://www.aliexpress.com/item/1005002632016529.html">AliExpress 24-26 AWG 5m</a>'
+                    'links': '<a href="https://www.aliexpress.com/item/1005002632016529.html">AliExpress (22 AWG, 2m)</a>'
                 },
                 {
                     'name': '26AWG Wire, No PCB (Not Recommended)',
@@ -316,7 +316,7 @@
                     'amount': () => tracker,
                     'cost': 0.65,
                     'costAll': () => (tracker * 0.65) + 3.01,
-                    'links': '<a href="https://www.aliexpress.us/item/3256803305182027.html">AliExpress cases</a>. Not guaranteed to fit, check your parts before ordering.'
+                    'links': '<a href="https://www.aliexpress.us/item/3256803305182027.html">AliExpress 🚫 unavailable</a>.'
                 },
                 {
                     'name': 'Amazon cases - 6 pcs',
@@ -338,14 +338,14 @@
                     'links': ''
                 },
                 {
-                    'name': 'Generic AliExpress straps - 6 pcs',
+                    'name': '🟡 Generic AliExpress straps - 6 pcs',
                     'amount': (set) => ((set < 6) ? 1 : 2),
                     'cost': 5,
                     'costAll': (set) => ((set < 6) ? 1 : 2) * 5 + 2.77,
                     'links': '<a href="https://aliexpress.com/item/1005001908740631.html">AliExpress straps</a>, get some in different sizes?'
                 },
                 {
-                    'name': 'Generic Amazon straps - 5 pcs',
+                    'name': '🟡 Generic Amazon straps - 5 pcs',
                     'amount': (set) => ((set < 5) ? 1 : 2),
                     'cost': 9.00,
                     'costAll': (set) => ((set < 5) ? 1 : 2) * 9.00,

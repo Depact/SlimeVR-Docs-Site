@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -20,8 +21,26 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
   publish:
-    if: ${{ github.repository == 'SlimeVR/SlimeVR-Docs-Site' }}
+    needs: test
+    if: ${{ github.repository == 'SlimeVR/SlimeVR-Docs-Site' && github.event_name != 'pull_request' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
