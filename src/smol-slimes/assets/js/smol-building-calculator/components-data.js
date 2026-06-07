@@ -45,7 +45,7 @@ export const componentCategories = [
         <sup><a href="smol-tracker.html#-microcontroller-boards" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "nRF52840",
+                name: "nRF52840 (AliExpress)",
                 description: "Includes 20% overage to account for DOA (Dead on Arrival) issues.",
                 amount: (set) => Math.ceil(set * 1.2) + " (20% overage)",
                 cost: () => nrf52840_2Pack_Price / 2,
@@ -74,7 +74,7 @@ export const componentCategories = [
         <sup><a href="smol-tracker.html#-inertial-measurement-units" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "🟢 ICM-45686",
+                name: "🟢 ICM-45686 (SlimeVR shop)",
                 description: "",
                 amount: (set) => set,
                 cost: () => 6.70,
@@ -82,14 +82,14 @@ export const componentCategories = [
                 links: '<a href="https://shop.slimevr.dev/products/slimevr-mumo-breakout-module-v1-icm-45686-qmc6309" target="_blank">SlimeVR Mumo Breakout Module V1 (ICM-45686 + QMC6309)</a><br/><br/><span>$6.70 per IMU. Cost includes one extra for receiver spare (+$6.70).</span>',
             },
             {
-                name: "🟢 LSM6DSV",
+                name: "🟢 LSM6DSV (Moffshop)",
                 amount: (set) => set,
                 cost: () => 8.93,
                 costAll: (set) => set * 8.93 + 5.58,
                 links: '<a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">Moffshop LSM6DSV</a><br/><br/><span>$8.93 per IMU. Cost includes one extra for receiver spare (+$5.58).</span>',
             },
             {
-                name: "🟢 Nekumori Chrysalis LSM6DSV",
+                name: "🟢 Nekumori Chrysalis LSM6DSV (Nekumori)",
                 description: "An LSM6DSV shield with a button and RGB LED",
                 amount: (set) => set,
                 cost: () => 4.39,
@@ -145,7 +145,7 @@ export const componentCategories = [
         name: 'Kapton Tape <sup><a href="smol-tracker.html#-kapton-tape" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "Width: 20MM",
+                name: "Width: 20MM (AliExpress)",
                 description: "Do not skip using Kapton tape—it's essential to prevent short circuits when building stacked setups.",
                 amount: () => 1,
                 cost: () => 0.99,
@@ -280,7 +280,7 @@ export const componentCategories = [
         <sup><a href="smol-receiver.html" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "🟢 HolyIOT-21017",
+                name: "🟢 HolyIOT-21017 (AliExpress)",
                 description: "Best performance option.<br/>Good signal over 4m, even through walls, but is the most expensive.",
                 amount: (set) => calculateRecommendedReceiversAmount(set),
                 cost: () => 16.17,
@@ -288,7 +288,7 @@ export const componentCategories = [
                 links: '<a href="https://www.aliexpress.com/item/1005004673179004.html">AliExpress</a><br/><br/><span>$16.17 per receiver (one per 8 trackers, min 1).</span>',
             },
             {
-                name: "🟠 nRF52840 with Wi-Fi Antenna Mod",
+                name: "🟠 nRF52840 with Wi-Fi Antenna Mod (AliExpress)",
                 description: "Range is about 4m and cannot penetrate walls",
                 amount: (set) => calculateRecommendedReceiversAmount(set),
                 cost: () => nrf52840_2Pack_Price / 2 + 3.14,
@@ -308,7 +308,7 @@ export const componentCategories = [
                     <br/><br/><span>$7.16/2pack / 2 = $3.58/board + $3.14 antenna = $6.72 per receiver.</span>',
             },
             {
-                name: "🟠 nRF52840 with Wire Antenna Mod",
+                name: "🟠 nRF52840 with Wire Antenna Mod (AliExpress)",
                 description: "Cheapest option with the shortest range.<br/>Range is about 3m and cannot penetrate walls",
                 amount: (set) => calculateRecommendedReceiversAmount(set),
                 cost: () => nrf52840_2Pack_Price / 2,

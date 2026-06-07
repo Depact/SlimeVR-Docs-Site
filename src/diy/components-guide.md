@@ -79,7 +79,7 @@ Before you start, decide on [how many trackers you may need](../../../slimevr101
         <thead>
             <tr>
                 <th>Component</th>
-                <th style="width:70%">Choice (Shop)</th>
+                <th style="width:70%">Choice</th>
                 <th>Amount</th>
                 <th>Cost per one</th>
                 <th>Cost Total</th>
