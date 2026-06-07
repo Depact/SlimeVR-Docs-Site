@@ -110,8 +110,6 @@ Before you start, decide on [how many trackers you may need](../../../slimevr101
 | Full-Body | 10 | 2 spine, 2 knees, 2 ankles, 2 feet, 2 elbows |
 | Deluxe | 16 | Fully customizable |
 
-All trackers are standalone — each has its own microcontroller, battery, and charging board.
-
 ### Battery Life
 
 401230 3.7V 120 mAh Battery provides approximately 40-60 hours of battery life depending on components used and usage patterns.

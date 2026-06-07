@@ -364,13 +364,13 @@ export const componentCategories = [
             },
             {
                 name: "🟡 Depact Smol Sudo Dock",
-                amount: (set) => Math.ceil(set / 7),
-                cost: (set) => Math.ceil(set / 7) * 0.99 + set * 0.38 + 0.99,
-                costAll: (set) => Math.ceil(set / 7) * 0.99 + set * 0.38 + 0.99,
+                amount: (set) => Math.ceil(set / 6),
+                cost: (set) => Math.ceil(set / 6) * 0.99 + set * 0.38 + 0.99,
+                costAll: (set) => Math.ceil(set / 6) * 0.99 + set * 0.38 + 0.99,
                 links: '<a href="../community/smol-slimes-community-docks.html#depact-smol-sudo-dock" target="_blank">Depact Smol Sudo Dock docs</a>\
                 <br/>\
                 <br/>\
-                <span>$0.99 per USB hub (one per 7 trackers)\
+                <span>$0.99 per USB hub (one per 6 trackers)\
                 <br/>\
                 + $0.38 OTG adapter per tracker\
                 <br/>\
