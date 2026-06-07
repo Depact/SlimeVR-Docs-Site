@@ -4,6 +4,11 @@ The costs shown should be taken as a **rough approximation** due to prices chang
 
 - Prices last checked: 2026-06-05.
 
+## Table Of Contents
+
+- TOC
+  {:toc}
+
 ## Don't order yet!
 This guide is meant to show rough price estimates for the components needed to build a set of SlimeVR trackers.
 Due to different case designs, compatibility is not guaranteed between components.
@@ -17,7 +22,7 @@ This limitation is due to the processing load required for handling multiple IMU
 Official SlimeVR Tracker v1.2 hardware uses an SPI interface to overcome this limitation.
 ```
 
-## Select Number of Trackers
+### Select Number of Trackers
 
 <div class="radio-card-group">
   <div class="radio-card">
@@ -62,7 +67,7 @@ Official SlimeVR Tracker v1.2 hardware uses an SPI interface to overcome this li
   </div>
 </div>
 
-## Select Parts
+### Select Parts
 
 <div class="table-wrapper">
     <table>
@@ -97,10 +102,6 @@ The most impactful choice regarding DIY SlimeVR trackers is the IMU (Inertial Me
 The second most impactful choice will be where you choose to purchase your components. This guide uses components sourced from AliExpress, due to price and availability. However, shipping times from AliExpress are long compared to other options—often 3-6 weeks—and have a chance to be faulty on arrival. Components may also be purchased from Amazon or local retailers, although pricing and availability will vary wildly.
 
 While purchasing components, especially from AliExpress, it is also highly recommended to purchase one or two extra of each part in case they come dead on arrival or due to soldering mistakes. Keep in mind that AliExpress shipping times are quite long, which means replacements for faulty components may have a very long wait time—so plan accordingly. Generally speaking, IMUs generally have the highest DOA (dead-on-arrival) rate. Wemos D1 Minis, TP4046 charging boards, and batteries are all fairly reliable with low DOA rates—however it still may be worthwhile purchasing extras just in case.
-
-* TOC
-{:toc}
-
 
 ### Tools
 
