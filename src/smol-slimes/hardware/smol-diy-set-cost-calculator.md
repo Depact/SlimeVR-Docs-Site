@@ -1,13 +1,20 @@
 # Smol DIY Set Cost Calculator
 
-- See the [IMU Comparison page](../../diy/imu-comparison.md) for detailed tiered recommendations.
-- Prices last checked: 2026-06-05.
+
+```admonish info
+- The costs shown should be taken as a **rough approximation** due to prices changing over time. Prices are in USD.
+- Prices last updated: 2026-06-05.
+- Links sourced by community.
+```
+
 
 ```admonish info
 Default selected values are chosen to offer the best price-to-performance balance.
 
 For better performance, change the selection to the following value:
 - IMU: ICM-45686
+
+See the [IMU Comparison page](../../diy/imu-comparison.md) for detailed IMU tiered recommendations.
 ```
 
 ## Select Number of Trackers

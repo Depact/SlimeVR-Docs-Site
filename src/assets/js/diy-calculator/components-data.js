@@ -30,7 +30,7 @@ export const componentCategories = [
     name: 'IMU',
     choices: [
       {
-        name: '🟢 ICM-45686 (Shop)',
+        name: '🟢 ICM-45686 (SlimeVR shop)',
         description: 'Best performance option.',
         amount: (set) => set,
         cost: () => 6.70,
@@ -262,7 +262,7 @@ export const componentCategories = [
         links: '<a href="https://www.amazon.com/dp/B075K6N7DF">Amazon JST connectors</a><br/><br/><span>$12.98 for 20pcs.</span>',
       },
       {
-        name: 'SlimeVR Extension Cables Deluxe Set (Shop)',
+        name: 'SlimeVR Extension Cables Deluxe Set (SlimeVR shop)',
         description: 'Pre-made V3 cables from official store. 6 foot + 2 hip + 2 arm. 10 cables, one per extension.',
         amount: (set) => Math.ceil(extensionCount(set) / 10),
         cost: () => 4.50,
@@ -270,7 +270,7 @@ export const componentCategories = [
         links: '<a href="https://shop.slimevr.dev/products/slimevr-extension-cables-deluxe-set">SlimeVR Shop (Deluxe Set)</a><br/><br/><span>~$4.50 for 10 cables.</span>',
       },
       {
-        name: 'SlimeVR Extension Cables Full-Body Set (Shop)',
+        name: 'SlimeVR Extension Cables Full-Body Set (SlimeVR shop)',
         description: 'Pre-made V3 cables from official store. 4 foot + 2 hip. 6 cables, one per extension.',
         amount: (set) => Math.ceil(extensionCount(set) / 6),
         cost: () => 3.00,

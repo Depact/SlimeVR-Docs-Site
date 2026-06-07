@@ -1,8 +1,11 @@
 # Components Guide
 
-The costs shown should be taken as a **rough approximation** due to prices changing over time. Prices are in USD.
 
-- Prices last checked: 2026-06-05.
+```admonish info
+- The costs shown should be taken as a **rough approximation** due to prices changing over time. Prices are in USD.
+- Prices last updated: 2026-06-05.
+- Links sourced by community.
+```
 
 ## Table Of Contents
 
@@ -23,6 +26,8 @@ Official SlimeVR Tracker v1.2 hardware uses an SPI interface to overcome this li
 ```
 
 ### Select Number of Trackers
+
+Before you start, decide on [how many trackers you may need](../../../slimevr101.md#how-many-trackers-do-you-need).
 
 <div class="radio-card-group">
   <div class="radio-card">
