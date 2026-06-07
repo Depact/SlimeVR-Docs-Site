@@ -100,8 +100,25 @@ Before you start, decide on [how many trackers you may need](../../../slimevr101
 
 ## Breakdown
 
-- One dongle support 10 trackers, but 8 trackers per receiver recommended.
-- 401230 3.7V 110 mAh Battery generally provides 40-60 hours of battery life, depending on use and components use.
+### Set Variants
+
+| Set | IMUs | Tracks |
+|-----|------|--------|
+| Lower-Body | 5 | Spine, knees, ankles |
+| Core | 6 | + extra spine (hip) |
+| Enhanced Core | 8 | + feet orientation |
+| Full-Body | 10 | + elbows |
+| Deluxe | 16 | Fully customizable |
+
+Core and above use 2 upper-body trackers (chest + hip). Enhanced Core adds 2 feet as extensions from the ankle trackers. Full-Body adds 2 elbows. Extensions share the microcontroller, battery, and charging board of their parent tracker.
+
+### Battery Life
+
+401230 3.7V 120 mAh Battery provides approximately 40-60 hours of battery life depending on components used and usage patterns.
+
+### Receiver
+
+One dongle supports up to 10 trackers, but 8 trackers per receiver recommended for reliability.
 
 ## Steps After Acquiring Parts
 
