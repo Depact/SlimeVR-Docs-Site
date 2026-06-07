@@ -59,12 +59,12 @@ export const componentCategories = [
     name: 'Batteries',
     choices: [
       {
-        name: '1800 mAh 804040 Li-Po 🚫 unavailable (AliExpress)',
-        description: 'Large capacity. Unavailable from AliExpress (EU geo-blocked). One per primary tracker.',
+        name: '1800 mAh 804040 Li-Po (AliExpress)',
+        description: 'Large capacity. One per primary tracker.',
         amount: (set) => primaryTrackerCount(set),
-        cost: () => 3.66,
-        costAll: (set) => primaryTrackerCount(set) * 3.19 + 5.33,
-        links: '<a href="https://www.aliexpress.us/item/3256803961495200.html">AliExpress 🚫 unavailable</a> or <a href="https://www.aliexpress.com/item/1005002559604104.html">AliExpress 🚫 unavailable</a><br/><br/><span>$3.19 per battery, plus $5.33 shipping.</span>',
+        cost: () => 1.67,
+        costAll: (set) => primaryTrackerCount(set) * 1.67,
+        links: '<a href="https://www.aliexpress.com/item/1005009612692951.html">804040 1800mAh 10pk 2 wires (AliExpress)</a><br/><br/><span>$16.74 per 10-pack ($1.67 per battery).</span>',
       },
       {
         name: '1200 mAh 903052 Li-Po - 5 pcs (Amazon)',
@@ -296,14 +296,6 @@ export const componentCategories = [
         cost: () => 2,
         costAll: (set) => set * 2,
         links: 'You make your own cases!<br/><br/><span>$2 per case (3D print material estimate).</span>',
-      },
-      {
-        name: 'AliExpress cases 🚫 unavailable (AliExpress)',
-        description: 'Cheap but unavailable (EU geo-blocked).',
-        amount: (set) => set,
-        cost: () => 0.65,
-        costAll: (set) => set * 0.65 + 3.01,
-        links: '<a href="https://www.aliexpress.us/item/3256803305182027.html">AliExpress 🚫 unavailable</a><br/><br/><span>$0.65 per case, plus $3.01 shipping.</span>',
       },
       {
         name: 'Amazon cases - 6 pcs (Amazon)',

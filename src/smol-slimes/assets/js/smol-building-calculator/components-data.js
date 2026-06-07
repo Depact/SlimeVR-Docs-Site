@@ -8,8 +8,8 @@ export const recommendedTrackersPerReceiver = 8;
 
 // TENSTAR NRF52840 2-pack → $7.16 (2pcs Red NRF52840)
 export const nrf52840_2Pack_Price = 7.16;
-// 401230 110mAh 10pcs — unavailable (geo-blocked EU)
-export const battery_10Pack_Price = 8.49;
+// 401230 120mAh 10pcs
+export const battery_10Pack_Price = 17.45;
 
 
 function calculateRecommendedReceiversAmount(set) {
@@ -104,11 +104,11 @@ export const componentCategories = [
         <sup><a href="smol-tracker.html#-buttons" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "3X4X2MM SMD 2-PIN 🚫 unavailable",
+                name: "3X4X2MM SMD 2-PIN (AliExpress)",
                 amount: (set) => set,
-                cost: () => 1.53 / 50,
-                costAll: () => 1.53 / 50 + 0.99,
-                links: '<a href="https://www.aliexpress.com/item/1005007004194449.html" target="_blank">AliExpress 🚫 unavailable</a><br/><br/><span>$1.53 for 50pcs, plus $0.99 shipping.</span>',
+                cost: () => 1.26 / 100,
+                costAll: (set) => set * (1.26 / 100),
+                links: '<a href="https://www.aliexpress.com/item/1005004194174696.html" target="_blank">3×4×2mm 100pcs (AliExpress)</a><br/><br/><span>$1.26 per 100pcs ($0.013 per button).</span>',
             },
             {
                 name: "Sourced elsewhere",
@@ -125,12 +125,12 @@ export const componentCategories = [
         <sup><a href="smol-tracker.html#-batteries" target="_blank">[more]</a></sup>',
         choices: [
             {
-                name: "401230 3.7V 110 mAh Battery 🚫 unavailable",
+                name: "401230 3.7V 120 mAh Battery (AliExpress)",
                 description: "Most community cases are designed to accommodate this battery.",
                 amount: (set) => set,
                 cost: () => battery_10Pack_Price / 10,
-                costAll: (set) => set * (battery_10Pack_Price / 10) + 5.2,
-                links: '<a href="https://www.aliexpress.com/item/714331867.html" target="_blank">AliExpress 🚫 unavailable</a><br/><br/><span>$8.49 per 10-pack ($0.85/battery). Cost includes shipping (+$5.20).</span>',
+                costAll: (set) => set * (battery_10Pack_Price / 10),
+                links: '<a href="https://www.aliexpress.com/item/1005006119986947.html" target="_blank">401230 120mAh×10 (AliExpress)</a><br/><br/><span>$17.45 per 10-pack ($1.75 per battery).</span>',
             },
             {
                 name: "Sourced elsewhere",

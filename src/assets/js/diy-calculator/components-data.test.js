@@ -81,7 +81,7 @@ describe('Batteries', () => {
     ${SET.CORE} | ${6}
     ${SET.ENHANCED}| ${6}
     ${SET.FULL} | ${8}
-  `('1800 mAh 🚫 unavailable: $expected batteries for $set trackers', ({ set, expected }) => {
+  `('1800 mAh 804040: $expected batteries for $set trackers', ({ set, expected }) => {
     expect(choice('Batteries', 0).amount(set)).toBe(expected);
   });
 
@@ -323,22 +323,12 @@ describe('Cases', () => {
 
   it.each`
     set          | expected
-    ${SET.LOWER}| ${SET.LOWER}
-    ${SET.CORE} | ${SET.CORE}
-    ${SET.ENHANCED}| ${SET.ENHANCED}
-    ${SET.FULL} | ${SET.FULL}
-  `('AliExpress cases (unavailable): $expected for $set trackers', ({ set, expected }) => {
-    expect(choice('Cases', 1).amount(set)).toBe(expected);
-  });
-
-  it.each`
-    set          | expected
     ${SET.LOWER}| ${1}
     ${SET.CORE} | ${1}
     ${SET.ENHANCED}| ${2}
     ${SET.FULL} | ${2}
   `('Amazon cases 6-pack: $expected packs for $set trackers', ({ set, expected }) => {
-    expect(choice('Cases', 2).amount(set)).toBe(expected);
+    expect(choice('Cases', 1).amount(set)).toBe(expected);
   });
 
   it.each`
@@ -348,7 +338,7 @@ describe('Cases', () => {
     ${SET.ENHANCED}| ${0}
     ${SET.FULL} | ${0}
   `('Sourced elsewhere: $expected for $set trackers', ({ set, expected }) => {
-    expect(choice('Cases', 3).amount(set)).toBe(expected);
+    expect(choice('Cases', 2).amount(set)).toBe(expected);
   });
 });
 

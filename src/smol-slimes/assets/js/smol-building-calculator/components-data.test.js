@@ -57,7 +57,7 @@ describe('Button', () => {
     ${SET.CORE} | ${SET.CORE}
     ${SET.ENHANCED}| ${SET.ENHANCED}
     ${SET.FULL} | ${SET.FULL}
-  `('3X4X2MM SMD 🚫 unavailable: $expected for $set trackers', ({ set, expected }) => {
+  `('3X4X2MM SMD: $expected for $set trackers', ({ set, expected }) => {
     expect(choice('Button', 0).amount(set)).toBe(expected);
   });
 
@@ -79,7 +79,7 @@ describe('Batteries', () => {
     ${SET.CORE} | ${SET.CORE}
     ${SET.ENHANCED}| ${SET.ENHANCED}
     ${SET.FULL} | ${SET.FULL}
-  `('401230 110mAh 🚫 unavailable: $expected for $set trackers', ({ set, expected }) => {
+  `('401230 120mAh: $expected for $set trackers', ({ set, expected }) => {
     expect(choice('Batteries', 0).amount(set)).toBe(expected);
   });
 
