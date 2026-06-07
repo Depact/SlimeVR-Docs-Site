@@ -176,10 +176,10 @@ describe('Straps', () => {
 
   it.each`
     set          | expected
-    ${SET.LOWER}| ${1}
-    ${SET.CORE} | ${2}
-    ${SET.ENHANCED}| ${2}
-    ${SET.FULL} | ${2}
+    ${SET.LOWER}| ${3}
+    ${SET.CORE} | ${3}
+    ${SET.ENHANCED}| ${3}
+    ${SET.FULL} | ${4}
   `('AliExpress + GoPro: $expected packs for $set trackers', ({ set, expected }) => {
     expect(choice('Straps', 1).amount(set)).toBe(expected);
   });

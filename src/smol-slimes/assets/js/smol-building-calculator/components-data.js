@@ -243,17 +243,32 @@ export const componentCategories = [
             },
             {
                 name: "🟡 Generic AliExpress straps + GoPro Chest Strap",
-                amount: (set) => Math.ceil(set / 5),
-                cost: () => 5 + 0.99,
-                costAll: (set) => Math.ceil(set / 5) * 2.67 + 2.77 + 0.99,
+                amount: (set) => {
+                    const p20 = set <= 8 ? 1 : 2;
+                    return 2 + p20;
+                },
+                cost: () => 0,
+                costAll: (set) => {
+                    const p20 = set <= 8 ? 1 : 2;
+                    return 3.02 + 2.68 + p20 * 2.26 + 0.99;
+                },
                 links: '\
                     Parts:\
                     <ul>\
-                        <li><a href="https://aliexpress.com/item/1005001908740631.html" target="_blank">AliExpress (25mm×200-400mm, 2-5pcs)</a>\
+                        <li><a href="https://www.aliexpress.com/item/1005009646538072.html" target="_blank">AliExpress (30mm\u00d720-40cm, 5pcs)</a>\
                             <br/>Most cases are designed for 30mm wide straps.\
                         </li>\
                         <li><a href="https://www.aliexpress.com/item/1005004792179605.html" target="_blank">$0.99 GoPro Chest Strap</a></li>\
-                    </ul>',
+                    </ul>\
+                    <br/>\
+                    <br/>\
+                    <span>\
+                        Per 5-pack prices: 20cm $2.26, 30cm $2.68, 40cm $3.02<br/>\
+                        Per-set packs needed:<br/>\
+                        - 5 Lower \u2192 1\u00d740cm + 1\u00d730cm + 1\u00d720cm = $7.96 + $0.99 = $8.95<br/>\
+                        - 6 Core \u2192 1\u00d740cm + 1\u00d730cm + 1\u00d720cm = $7.96 + $0.99 = $8.95<br/>\
+                        - 8 Enhanced \u2192 1\u00d740cm + 1\u00d730cm + 1\u00d720cm = $7.96 + $0.99 = $8.95<br/>\
+                        - 10 Full \u2192 1\u00d740cm + 1\u00d730cm + 2\u00d720cm = $10.22 + $0.99 = $11.21</span>',
             },
             {
                 name: "🟡 Generic Amazon straps",
