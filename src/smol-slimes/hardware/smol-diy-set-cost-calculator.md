@@ -102,15 +102,15 @@ Before you start, decide on [how many trackers you may need](../../../slimevr101
 
 ### Set Variants
 
-| Set | IMUs | Tracks |
-|-----|------|--------|
-| Lower-Body | 5 | Spine, knees, ankles |
-| Core | 6 | + extra spine (hip) |
-| Enhanced Core | 8 | + feet orientation |
-| Full-Body | 10 | + elbows |
+| Set | Trackers | Tracks |
+|-----|----------|--------|
+| Lower-Body | 5 | Spine, 2 knees, 2 ankles |
+| Core | 6 | 2 spine (chest + hip), 2 knees, 2 ankles |
+| Enhanced Core | 8 | 2 spine, 2 knees, 2 ankles, 2 feet |
+| Full-Body | 10 | 2 spine, 2 knees, 2 ankles, 2 feet, 2 elbows |
 | Deluxe | 16 | Fully customizable |
 
-Core and above use 2 upper-body trackers (chest + hip). Enhanced Core adds 2 feet as extensions from the ankle trackers. Full-Body adds 2 elbows. Extensions share the microcontroller, battery, and charging board of their parent tracker.
+All trackers are standalone — each has its own microcontroller, battery, and charging board.
 
 ### Battery Life
 
