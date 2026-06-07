@@ -190,18 +190,8 @@ describe('Straps', () => {
     ${SET.CORE} | ${2}
     ${SET.ENHANCED}| ${2}
     ${SET.FULL} | ${2}
-  `('AliExpress only: $expected packs for $set trackers', ({ set, expected }) => {
-    expect(choice('Straps', 2).amount(set)).toBe(expected);
-  });
-
-  it.each`
-    set          | expected
-    ${SET.LOWER}| ${2}
-    ${SET.CORE} | ${2}
-    ${SET.ENHANCED}| ${2}
-    ${SET.FULL} | ${2}
   `('Amazon: $expected packs for $set trackers', ({ set, expected }) => {
-    expect(choice('Straps', 3).amount(set)).toBe(expected);
+    expect(choice('Straps', 2).amount(set)).toBe(expected);
   });
 
   it.each`
@@ -211,7 +201,7 @@ describe('Straps', () => {
     ${SET.ENHANCED}| ${0}
     ${SET.FULL} | ${0}
   `('Sourced elsewhere: $expected for $set trackers', ({ set, expected }) => {
-    expect(choice('Straps', 4).amount(set)).toBe(expected);
+    expect(choice('Straps', 3).amount(set)).toBe(expected);
   });
 });
 

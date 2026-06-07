@@ -242,11 +242,25 @@ export const componentCategories = [
                 links: '<a href="smol-slimes-community-straps.html#depact-smol-strap-v3" target="_blank">Depact V3 strap docs</a>',
             },
             {
+                name: "🟡 Generic AliExpress straps + GoPro Chest Strap",
+                amount: (set) => Math.ceil(set / 5),
+                cost: () => 5 + 0.99,
+                costAll: (set) => Math.ceil(set / 5) * 2.67 + 2.77 + 0.99,
+                links: '\
+                    Parts:\
+                    <ul>\
+                        <li><a href="https://aliexpress.com/item/1005001908740631.html" target="_blank">AliExpress (25mm×200-400mm, 2-5pcs)</a>\
+                            <br/>Most cases are designed for 30mm wide straps.\
+                        </li>\
+                        <li><a href="https://www.aliexpress.com/item/1005004792179605.html" target="_blank">$0.99 GoPro Chest Strap</a></li>\
+                    </ul>',
+            },
+            {
                 name: "🟡 Generic Amazon straps",
-                amount: (set) => (set < 5 ? 1 : 2),
-                cost: () => 9.0,
-                costAll: (set) => (set < 5 ? 1 : 2) * 9.0,
-                links: '<a href="https://www.amazon.com/dp/B09T5YDMTR/" target="_blank">Amazon straps</a><br/><br/><span>$9 per pack. 1 pack for under 5 trackers, 2 packs for 5+.</span>',
+                amount: (set) => Math.ceil(set / 5),
+                cost: () => 8.99,
+                costAll: (set) => Math.ceil(set / 5) * 8.99,
+                links: '<a href="https://www.amazon.com/dp/B09T5YDMTR/" target="_blank">Amazon straps</a><br/><br/><span>$8.99 per 5-pack (12"\u00d72 + 18"\u00d72 + 24"\u00d71)<br/>24" (610mm) \u2192 upper-body main trackers<br/>18" (457mm) \u2192 thighs<br/>12" (305mm) \u2192 ankles/arms<br/><br/>Per-set sizing:<br/>5 Lower-Body \u2192 1 pack (1 spine + 2 thighs + 2 ankles) \u2713<br/>6 Core \u2192 2 packs (2 spine + 4 thighs + 4 ankles)<br/>8 Enhanced \u2192 2 packs (2 spine + 4 thighs + 4 ankles/feet)<br/>10 Full \u2192 2 packs (2 spine + 4 thighs + 4 ankles + 2 arms)<br/>16 Deluxe \u2192 4 packs<br/><br/>Extension trackers: use separate 25mm\u00d71000mm/300mm narrow straps</span>',
             },
             {
                 name: "Sourced elsewhere",
