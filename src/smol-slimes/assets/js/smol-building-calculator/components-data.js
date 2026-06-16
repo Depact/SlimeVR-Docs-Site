@@ -57,9 +57,10 @@ export const componentCategories = [
                     <ul>\
                         <li>\
                             <a href="https://pl.aliexpress.com/item/1005007738886550.html" target="_blank">AliExpress (2pcs Red NRF52840)</a>\
+                            <br/>\
+                            <span>$7.16 per 2-pack ($3.58/board).</span>\
                         </li>\
-                    </ul>\
-                    <br/><br/><span>$7.16 per 2-pack ($3.58/board).</span>',
+                    </ul>',
             },
             {
                 name: "Sourced elsewhere",
@@ -154,7 +155,6 @@ export const componentCategories = [
                 costAll: () => 0.99 + 0.99,
                 links: '<a href="https://www.aliexpress.com/item/1005007518587827.html" target="_blank">AliExpress (Brown/33M/0.05MM/20MM)</a>\
                 <br/>\
-                <br/>\
                 <span>$0.99 per roll, plus $0.99 shipping.</span>',
             },
             {
@@ -177,7 +177,6 @@ export const componentCategories = [
                 cost: () => 3.78,
                 costAll: () => 3.78 + 1.68,
                 links: '<a href="https://www.aliexpress.com/item/1005002632016529.html" target="_blank">AliExpress (22 AWG, 2m)</a>\
-                <br/>\
                 <br/>\
                 <span>$3.78 for 2m wire, plus $1.68 shipping.</span>',
             },
@@ -342,7 +341,11 @@ export const componentCategories = [
                 amount: (set) => calculateRecommendedReceiversAmount(set),
                 cost: () => 16.17,
                 costAll: (set) => 16.17 * calculateRecommendedReceiversAmount(set),
-                links: '<a href="https://www.aliexpress.com/item/1005004673179004.html">AliExpress</a><br/><br/><span>$16.17 per receiver (one per 8 trackers, min 1).</span>',
+                links: '\
+                    <a href="https://www.aliexpress.com/item/1005004673179004.html" target="_blank">AliExpress</a>\
+                    <br/>\
+                    <br/>\
+                    <span>$16.17 per receiver (one per 8 trackers, min 1).</span>',
             },
             {
                 name: "🟡 nRF52840 with Wi-Fi Antenna Mod (AliExpress)",
@@ -363,9 +366,10 @@ export const componentCategories = [
                         </li>\
                     </ul>\
                     <br/>\
-                    <span>$7.16(2pack) / 2 = $3.58/board + $3.14 antenna\
-                    <br/>\
-                    = $6.72 per receiver.</span>',
+                    <ul>\
+                        <li>$7.16(2pack)/2 = $3.58/board</li>\
+                        <li>$3.14 antenna</li>\
+                    </ul>',
             },
             {
                 name: "🟠 nRF52840 with Wire Antenna Mod (AliExpress)",
@@ -386,7 +390,9 @@ export const componentCategories = [
                         </li>\
                     </ul>\
                     <br/>\
-                    <span>$7.16(2pack) / 2 = $3.58 per board (wire from wire mod purchased separately).</span>',
+                    <ul>\
+                        <li>$7.16(2pack)/2 = $3.58 per board (wire from wire mod purchased separately).</li>\
+                    </ul>',
             },
             {
                 name: "Sourced elsewhere",
@@ -412,14 +418,7 @@ export const componentCategories = [
                 amount: (set) => Math.ceil(set / 7),
                 cost: (set) => Math.ceil(set / 7) * 0.99 + set * 0.38 + 0.99,
                 costAll: (set) => Math.ceil(set / 7) * 0.99 + set * 0.38 + 0.99,
-                links: '<a href="../community/smol-slimes-community-docks.html#depact-smol-sudo-dock" target="_blank">Depact Smol Sudo Dock docs</a>\
-                <br/>\
-                <br/>\
-                <span>$0.99 per USB hub (one per 7 trackers)\
-                <br/>\
-                + $0.38 OTG adapter per tracker\
-                <br/>\
-                + $0.99 shipping</span>',
+                links: '<a href="../community/smol-slimes-community-docks.html#depact-smol-sudo-dock" target="_blank">Depact Smol Sudo Dock docs</a>',
             },
         ],
     },
