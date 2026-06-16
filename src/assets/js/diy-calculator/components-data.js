@@ -58,7 +58,7 @@ export const componentCategories = [
         cost: () => 3.35,
         costAll: (set) => set * 3.35 + 6.70,
         links: '\
-            <a href="https://www.aliexpress.com/wholesale?SearchText=LSM6DSR">AliExpress LSM6DSR</a>, <b>experimental</b>.<br/>\
+            <a href="https://www.aliexpress.com/wholesale?SearchText=LSM6DSR">AliExpress LSM6DSR</a><br/>\
             <span>$3.35 per IMU. Cost includes one extra spare (+$6.70).</span>',
       },
     ],
@@ -195,7 +195,6 @@ export const componentCategories = [
       },
       {
         name: 'Sourced elsewhere',
-        defaultSelected: true,
         amount: () => 0,
         cost: () => 0,
         costAll: () => 0,
@@ -355,7 +354,6 @@ export const componentCategories = [
       },
       {
         name: 'Sourced elsewhere',
-        defaultSelected: true,
         amount: () => 0,
         cost: () => 0,
         costAll: () => 0,
