@@ -6,7 +6,7 @@
 
 export const recommendedTrackersPerReceiver = 8;
 
-// TENSTAR NRF52840 2-pack → $7.16 (2pcs Red NRF52840)
+// TENSTAR NRF52840 2-pack: $7.16 (2pcs Red NRF52840)
 export const nrf52840_2Pack_Price = 7.16;
 export const nrf52840_Price = nrf52840_2Pack_Price / 2;
 // 401230 120mAh 10pcs
@@ -267,47 +267,54 @@ export const componentCategories = [
                     <br/>\
                     Prices:\
                     <ul>\
-                        <li>5×20cm $2.26</li>\
-                        <li>5×30cm $2.68</li>\
-                        <li>5×40cm $3.02</li>\
-                        <li>Delivery $0.99</li>\
+                        <li>5×20cm: $2.26</li>\
+                        <li>5×30cm: $2.68</li>\
+                        <li>5×40cm: $3.02</li>\
+                        <li>Delivery: $0.99</li>\
                     </ul>\
                     <br/>\
                     Example set math:\
                     <ul>\
-                        <li>5 Lower → 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
-                        <li>6 Core → 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
-                        <li>8 Enhanced → 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
-                        <li>10 Full → 1×5x40cm + 1×5x30cm + 2×5x20cm = $11.21</li>\
+                        <li>5 Lower: 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
+                        <li>6 Core: 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
+                        <li>8 Enhanced: 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
+                        <li>10 Full: 1×5x40cm + 1×5x30cm + 2×5x20cm = $11.21</li>\
                     </ul>'
             },
             {
                 name: "🟡 Generic Amazon straps",
-                amount: (set) => Math.ceil(set / 5),
+                amount: (set) => {
+                    const fivePackCost = 8.99;
+                    const packsNeeded = Math.ceil(set / 5);
+                    return packsNeeded;
+                },
                 cost: () => 8.99,
-                costAll: (set) => Math.ceil(set / 5) * 8.99,
-                links: '<a href="https://www.amazon.com/dp/B09T5YDMTR/" target="_blank">Amazon straps</a>\
-                <br/>\
-                $8.99 per 5-pack\
-                <br/>\
-                <ul>\
-                    <li>(12"×2 + 18"×2 + 24"×1)\
-                        <ul>\
-                            <li>24" (610mm) → upper-body main trackers (chest, hip, spine)</li>\
-                            <li>18" (457mm) → thighs</li>\
-                            <li>12" (305mm) → ankles, elbows, arms</li>\
-                        </ul>\
-                    </li>\
-                    <li>Per-set sizing (main trackers only):\
-                        <ul>\
-                            <li>5 Lower-Body → 1 pack (spine + 2 thighs + 2 ankles)</li>\
-                            <li>6 Core → 2 packs (2 upper-body + 2 thighs + 2 ankles)</li>\
-                            <li>8 Enhanced → 2 packs (2 upper-body + 2 thighs + 2 ankles)</li>\
-                            <li>10 Full → 2 packs (2 upper-body + 2 thighs + 2 ankles + 2 elbows)</li>\
-                            <li>16 Deluxe → 4 packs</li>\
-                        </ul>\
-                    </li>\
-                </ul>',
+                costAll: (set) => {
+                    const fivePackCost = 8.99;
+                    const packsNeeded = Math.ceil(set / 5);
+                    return packsNeeded * fivePackCost;
+                },
+                links: '\
+                    Parts:\
+                    <ul>\
+                        <li><a href="https://www.amazon.com/dp/B09T5YDMTR/" target="_blank">Amazon straps</a>\
+                            <br/>3 size combo (12"×2 + 18"×2 + 24"×1) $8.99\
+                            <ul>\
+                                <li>24" (610mm): upper-body main trackers (chest, hip, spine)</li>\
+                                <li>18" (457mm): thighs</li>\
+                                <li>12" (305mm): ankles, elbows, arms</li>\
+                            </ul>\
+                        </li>\
+                    </ul>\
+                    <br/>\
+                    Example set math:\
+                    <ul>\
+                        <li>5 Lower-Body: 1 pack = $8.99</li>\
+                        <li>6 Core: 2 packs = $17.98</li>\
+                        <li>8 Enhanced: 2 packs = $17.98</li>\
+                        <li>10 Full: 2 packs = $17.98</li>\
+                        <li>16 Deluxe: 4 packs = $35.96</li>\
+                    </ul>',
             },
             {
                 name: "Sourced elsewhere",
