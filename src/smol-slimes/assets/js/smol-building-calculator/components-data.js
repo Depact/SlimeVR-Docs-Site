@@ -319,13 +319,13 @@ export const componentCategories = [
                     </ul>',
             },
             {
-                name: "🟡 VYRO VR Silicone Straps",
+                name: "🟢 VYRO VR Silicone Straps",
                 amount: (set) => Math.ceil(set / 10),
                 cost: () => 27.46,
                 costAll: (set) => Math.ceil(set / 10) * 27.46,
                 links: '\
-                    <a href="https://vyrovr.com/products/10-slimevr-compatible-silicone-backed-30mm-straps" target="_blank">VYRO VR Silicone Straps</a>\
-                    <br/>10-pack: 2x30cm + 4x35cm + 2x50cm + 2x110cm\
+                    <a href="https://vyrovr.com/products/10-slimevr-compatible-silicone-backed-30mm-straps" target="_blank">VYRO VR Silicone Straps</a><br/>\
+                    10-pack: 2x30cm + 4x35cm + 2x50cm + 2x110cm\
                     <ul>\
                         <li>30cm (~12"): ankles, arms</li>\
                         <li>50cm (~20"): thighs, hip</li>\
@@ -333,7 +333,7 @@ export const componentCategories = [
                     </ul>',
             },
             {
-                name: "🟡 VYRO VR Comfort Strap Bundle",
+                name: "🟢 VYRO VR Comfort Strap Bundle",
                 amount: () => 1,
                 cost: (set) => {
                     if (set <= 6) return 109;
@@ -347,8 +347,7 @@ export const componentCategories = [
                     return 278;
                 },
                 links: '\
-                    <a href="https://vyrovr.com/products/vyro-vr-comfort-strap-bundles" target="_blank">VYRO VR Comfort Strap Bundles</a>\
-                    <br/>\
+                    <a href="https://vyrovr.com/products/vyro-vr-comfort-strap-bundles" target="_blank">VYRO VR Comfort Strap Bundles</a><br/>\
                     <br/>\
                     Variants:\
                     <ul>\
