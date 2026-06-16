@@ -319,6 +319,20 @@ export const componentCategories = [
                     </ul>',
             },
             {
+                name: "🟡 VYROVR Silicone Straps",
+                amount: (set) => Math.ceil(set / 10),
+                cost: () => 27.46,
+                costAll: (set) => Math.ceil(set / 10) * 27.46,
+                links: '\
+                    <a href="https://vyrovr.com/products/10-slimevr-compatible-silicone-backed-30mm-straps" target="_blank">VYROVR Silicone Straps</a>\
+                    <br/>10-pack: 2\u00d730cm + 4\u00d735cm + 2\u00d750cm + 2\u00d7110cm\
+                    <ul>\
+                        <li>30cm (~12"): ankles, arms</li>\
+                        <li>50cm (~20"): thighs, hip</li>\
+                        <li>110cm (~43"): chest, waist</li>\
+                    </ul>',
+            },
+            {
                 name: "Sourced elsewhere",
                 amount: () => 0,
                 cost: () => 0,
