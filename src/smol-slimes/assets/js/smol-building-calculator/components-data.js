@@ -269,7 +269,6 @@ export const componentCategories = [
                         </li>\
                         <li><a href="https://www.aliexpress.com/item/1005004792179605.html" target="_blank">$0.99 GoPro Chest Strap</a></li>\
                     </ul>\
-                    <br/>\
                     Prices:\
                     <ul>\
                         <li>5×20cm: $2.26</li>\
@@ -277,7 +276,6 @@ export const componentCategories = [
                         <li>5×40cm: $3.02</li>\
                         <li>Delivery: $0.99</li>\
                     </ul>\
-                    <br/>\
                     Example set configuration:\
                     <ul>\
                         <li>5 Lower: 1×5x40cm + 1×5x30cm + 1×5x20cm</li>\
@@ -311,7 +309,6 @@ export const componentCategories = [
                             </ul>\
                         </li>\
                     </ul>\
-                    <br/>\
                     Example set configuration:\
                     <ul>\
                         <li>5 Lower-Body: 1x3 size combo</li>\
@@ -344,7 +341,6 @@ export const componentCategories = [
                 links: '\
                     <a href="https://www.aliexpress.com/item/1005004673179004.html" target="_blank">AliExpress</a>\
                     <br/>\
-                    <br/>\
                     <span>$16.17 per receiver (one per 8 trackers, min 1).</span>',
             },
             {
@@ -360,15 +356,14 @@ export const componentCategories = [
                     <ul>\
                         <li>\
                             <a href="https://pl.aliexpress.com/item/1005007738886550.html" target="_blank">AliExpress (2pcs Red NRF52840)</a>\
+                            <br/>\
+                            $7.16(2pack)/2 = $3.58/board\
                         </li>\
                         <li>\
                             <a href="https://pl.aliexpress.com/item/4000298368244.html" target="_blank">AliExpress (5PCS)</a>\
+                            <br/>\
+                            $3.14 antenna\
                         </li>\
-                    </ul>\
-                    <br/>\
-                    <ul>\
-                        <li>$7.16(2pack)/2 = $3.58/board</li>\
-                        <li>$3.14 antenna</li>\
                     </ul>',
             },
             {
@@ -384,14 +379,12 @@ export const componentCategories = [
                     <ul>\
                         <li>\
                             <a href="https://pl.aliexpress.com/item/1005007738886550.html">AliExpress (2pcs Red NRF52840)</a>\
+                            <br/>\
+                            $7.16(2pack)/2 = $3.58 per board\
                         </li>\
                         <li>\
                             Use the wire from the wire for antenna mod\
                         </li>\
-                    </ul>\
-                    <br/>\
-                    <ul>\
-                        <li>$7.16(2pack)/2 = $3.58 per board (wire from wire mod purchased separately).</li>\
                     </ul>',
             },
             {
