@@ -244,31 +244,42 @@ export const componentCategories = [
             {
                 name: "🟡 Generic AliExpress straps + GoPro Chest Strap",
                 amount: (set) => {
-                    const p20 = set <= 8 ? 1 : 2;
-                    return 2 + p20;
+                    const five20cmPackCost = 2.26;
+                    const five30cmPackCost = 2.68;
+                    const five40cmPackCost = 3.02;
+
+                    const twentyCmPacks = set <= 8 ? 1 : 2;
+                    return 2 + twentyCmPacks;
                 },
                 cost: () => 0,
                 costAll: (set) => {
-                    const p20 = set <= 8 ? 1 : 2;
-                    return 3.02 + 2.68 + p20 * 2.26 + 0.99;
+                    const twentyCmPacks = set <= 8 ? 1 : 2;
+                    return 3.02 + 2.68 + twentyCmPacks * 2.26 + 0.99;
                 },
                 links: '\
                     Parts:\
                     <ul>\
-                        <li><a href="https://www.aliexpress.com/item/1005009646538072.html" target="_blank">AliExpress (30mm\u00d720-40cm, 5pcs)</a>\
+                        <li><a href="https://www.aliexpress.com/item/1005009646538072.html" target="_blank">AliExpress (30mm×20-40cm, 5pcs)</a>\
                             <br/>Most cases are designed for 30mm wide straps.\
                         </li>\
                         <li><a href="https://www.aliexpress.com/item/1005004792179605.html" target="_blank">$0.99 GoPro Chest Strap</a></li>\
                     </ul>\
                     <br/>\
+                    Prices:\
+                    <ul>\
+                        <li>5×20cm $2.26</li>\
+                        <li>5×30cm $2.68</li>\
+                        <li>5×40cm $3.02</li>\
+                        <li>Delivery $0.99</li>\
+                    </ul>\
                     <br/>\
-                    <span>\
-                        Per 5-pack prices: 20cm $2.26, 30cm $2.68, 40cm $3.02<br/>\
-                        Per-set packs needed:<br/>\
-                        - 5 Lower \u2192 1\u00d740cm + 1\u00d730cm + 1\u00d720cm = $7.96 + $0.99 = $8.95<br/>\
-                        - 6 Core \u2192 1\u00d740cm + 1\u00d730cm + 1\u00d720cm = $7.96 + $0.99 = $8.95<br/>\
-                        - 8 Enhanced \u2192 1\u00d740cm + 1\u00d730cm + 1\u00d720cm = $7.96 + $0.99 = $8.95<br/>\
-                        - 10 Full \u2192 1\u00d740cm + 1\u00d730cm + 2\u00d720cm = $10.22 + $0.99 = $11.21</span>',
+                    Example set math:\
+                    <ul>\
+                        <li>5 Lower → 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
+                        <li>6 Core → 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
+                        <li>8 Enhanced → 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
+                        <li>10 Full → 1×5x40cm + 1×5x30cm + 2×5x20cm = $11.21</li>\
+                    </ul>'
             },
             {
                 name: "🟡 Generic Amazon straps",
@@ -277,20 +288,26 @@ export const componentCategories = [
                 costAll: (set) => Math.ceil(set / 5) * 8.99,
                 links: '<a href="https://www.amazon.com/dp/B09T5YDMTR/" target="_blank">Amazon straps</a>\
                 <br/>\
+                $8.99 per 5-pack\
                 <br/>\
-                <span>\
-                    $8.99 per 5-pack<br/>\
-                    (12"\u00d72 + 18"\u00d72 + 24"\u00d71)<br/>\
-                    24" (610mm) \u2192 upper-body main trackers (chest, hip, spine)<br/>\
-                    18" (457mm) \u2192 thighs<br/>\
-                    12" (305mm) \u2192 ankles, elbows, arms<br/>\
-                    <br/>\
-                    Per-set sizing (main trackers only):<br/>\
-                    - 5 Lower-Body \u2192 1 pack (spine + 2 thighs + 2 ankles)<br/>\
-                    - 6 Core \u2192 2 packs (2 upper-body + 2 thighs + 2 ankles)<br/>\
-                    - 8 Enhanced \u2192 2 packs (2 upper-body + 2 thighs + 2 ankles)<br/>\
-                    - 10 Full \u2192 2 packs (2 upper-body + 2 thighs + 2 ankles + 2 elbows)<br/>\
-                    - 16 Deluxe \u2192 4 packs</span>',
+                <ul>\
+                    <li>(12"×2 + 18"×2 + 24"×1)\
+                        <ul>\
+                            <li>24" (610mm) → upper-body main trackers (chest, hip, spine)</li>\
+                            <li>18" (457mm) → thighs</li>\
+                            <li>12" (305mm) → ankles, elbows, arms</li>\
+                        </ul>\
+                    </li>\
+                    <li>Per-set sizing (main trackers only):\
+                        <ul>\
+                            <li>5 Lower-Body → 1 pack (spine + 2 thighs + 2 ankles)</li>\
+                            <li>6 Core → 2 packs (2 upper-body + 2 thighs + 2 ankles)</li>\
+                            <li>8 Enhanced → 2 packs (2 upper-body + 2 thighs + 2 ankles)</li>\
+                            <li>10 Full → 2 packs (2 upper-body + 2 thighs + 2 ankles + 2 elbows)</li>\
+                            <li>16 Deluxe → 4 packs</li>\
+                        </ul>\
+                    </li>\
+                </ul>',
             },
             {
                 name: "Sourced elsewhere",
