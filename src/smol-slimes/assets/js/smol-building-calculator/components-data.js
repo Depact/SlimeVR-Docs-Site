@@ -243,18 +243,24 @@ export const componentCategories = [
             },
             {
                 name: "🟡 Generic AliExpress straps + GoPro Chest Strap",
-                amount: (set) => {
+                amount: () => 0,
+                cost: (set) => {
                     const five20cmPackCost = 2.26;
                     const five30cmPackCost = 2.68;
                     const five40cmPackCost = 3.02;
+                    const deliveryCost = 0.99;
+                    const packCostAveragePlusDelivery = (five20cmPackCost + five30cmPackCost + five40cmPackCost) / 3 + deliveryCost;
+
+                    return packCostAveragePlusDelivery;
+                },
+                costAll: (set) => {
+                    const five20cmPackCost = 2.26;
+                    const five30cmPackCost = 2.68;
+                    const five40cmPackCost = 3.02;
+                    const deliveryCost = 0.99;
 
                     const twentyCmPacks = set <= 8 ? 1 : 2;
-                    return 2 + twentyCmPacks;
-                },
-                cost: () => 0,
-                costAll: (set) => {
-                    const twentyCmPacks = set <= 8 ? 1 : 2;
-                    return 3.02 + 2.68 + twentyCmPacks * 2.26 + 0.99;
+                    return five40cmPackCost + five30cmPackCost + twentyCmPacks * five20cmPackCost + deliveryCost;
                 },
                 links: '\
                     Parts:\
@@ -273,12 +279,12 @@ export const componentCategories = [
                         <li>Delivery: $0.99</li>\
                     </ul>\
                     <br/>\
-                    Example set math:\
+                    Example set configuration:\
                     <ul>\
-                        <li>5 Lower: 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
-                        <li>6 Core: 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
-                        <li>8 Enhanced: 1×5x40cm + 1×5x30cm + 1×5x20cm = $8.95</li>\
-                        <li>10 Full: 1×5x40cm + 1×5x30cm + 2×5x20cm = $11.21</li>\
+                        <li>5 Lower: 1×5x40cm + 1×5x30cm + 1×5x20cm</li>\
+                        <li>6 Core: 1×5x40cm + 1×5x30cm + 1×5x20cm</li>\
+                        <li>8 Enhanced: 1×5x40cm + 1×5x30cm + 1×5x20cm</li>\
+                        <li>10 Full: 1×5x40cm + 1×5x30cm + 2×5x20cm</li>\
                     </ul>'
             },
             {
@@ -307,13 +313,13 @@ export const componentCategories = [
                         </li>\
                     </ul>\
                     <br/>\
-                    Example set math:\
+                    Example set configuration:\
                     <ul>\
-                        <li>5 Lower-Body: 1 pack = $8.99</li>\
-                        <li>6 Core: 2 packs = $17.98</li>\
-                        <li>8 Enhanced: 2 packs = $17.98</li>\
-                        <li>10 Full: 2 packs = $17.98</li>\
-                        <li>16 Deluxe: 4 packs = $35.96</li>\
+                        <li>5 Lower-Body: 1x3 size combo</li>\
+                        <li>6 Core: 2x3 size combo</li>\
+                        <li>8 Enhanced: 2x3 size combo</li>\
+                        <li>10 Full: 2x3 size combo</li>\
+                        <li>16 Deluxe: 4x3 size combo</li>\
                     </ul>',
             },
             {
