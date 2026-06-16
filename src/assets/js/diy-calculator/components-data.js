@@ -22,7 +22,9 @@ export const componentCategories = [
         amount: (set) => primaryTrackerCount(set),
         cost: () => 1.85,
         costAll: (set) => primaryTrackerCount(set) * 1.85 + 2.53,
-        links: '<a href="https://www.aliexpress.com/wholesale?SearchText=D1+mini">AliExpress Wemos D1 Mini</a><br/><br/><span>$1.85 per board, plus $2.53 shipping.</span>',
+        links: '\
+            <a href="https://www.aliexpress.com/wholesale?SearchText=D1+mini">AliExpress Wemos D1 Mini</a><br/>\
+            <span>$1.85 per board, plus $2.53 shipping.</span>',
       },
     ],
   },
@@ -35,7 +37,9 @@ export const componentCategories = [
         amount: (set) => set,
         cost: () => 6.70,
         costAll: (set) => set * 6.70 + 6.70,
-        links: '<a href="https://shop.slimevr.dev/products/slimevr-mumo-breakout-module-v1-icm-45686-qmc6309">SlimeVR Mumo Breakout Module V1 (ICM-45686 + QMC6309)</a><br/><br/><span>$6.70 per IMU. Cost includes one extra spare (+$6.70).</span>',
+        links: '\
+            <a href="https://shop.slimevr.dev/products/slimevr-mumo-breakout-module-v1-icm-45686-qmc6309">SlimeVR Mumo Breakout Module V1 (ICM-45686 + QMC6309)</a><br/>\
+            <span>$6.70 per IMU. Cost includes one extra spare (+$6.70).</span>',
       },
       {
         name: '🟢 LSM6DSV (Moffshop)',
@@ -43,7 +47,9 @@ export const componentCategories = [
         amount: (set) => set,
         cost: () => 8.93,
         costAll: (set) => set * 8.93 + 5.58,
-        links: '<a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">Moffshop LSM6DSV</a><br/><br/><span>$8.93 per IMU. Cost includes one extra spare (+$5.58).</span>',
+        links: '\
+            <a href="https://moffshop.deyta.de/products/lsm6dsv-module" target="_blank">Moffshop LSM6DSV</a><br/>\
+            <span>$8.93 per IMU. Cost includes one extra spare (+$5.58).</span>',
       },
       {
         name: '🟢 LSM6DSR (AliExpress)',
@@ -51,7 +57,9 @@ export const componentCategories = [
         amount: (set) => set,
         cost: () => 3.35,
         costAll: (set) => set * 3.35 + 6.70,
-        links: '<a href="https://www.aliexpress.com/wholesale?SearchText=LSM6DSR">AliExpress LSM6DSR</a>, <b>experimental</b>.<br/><br/><span>$3.35 per IMU. Cost includes one extra spare (+$6.70).</span>',
+        links: '\
+            <a href="https://www.aliexpress.com/wholesale?SearchText=LSM6DSR">AliExpress LSM6DSR</a>, <b>experimental</b>.<br/>\
+            <span>$3.35 per IMU. Cost includes one extra spare (+$6.70).</span>',
       },
     ],
   },
@@ -64,7 +72,9 @@ export const componentCategories = [
         amount: (set) => primaryTrackerCount(set),
         cost: () => 1.67,
         costAll: (set) => primaryTrackerCount(set) * 1.67,
-        links: '<a href="https://www.aliexpress.com/item/1005009612692951.html">804040 1800mAh 10pk 2 wires (AliExpress)</a><br/><br/><span>$16.74 per 10-pack ($1.67 per battery).</span>',
+        links: '\
+            <a href="https://www.aliexpress.com/item/1005009612692951.html">804040 1800mAh 10pk 2 wires (AliExpress)</a><br/>\
+            <span>$16.74 per 10-pack ($1.67 per battery).</span>',
       },
       {
         name: '1200 mAh 903052 Li-Po - 5 pcs (Amazon)',
@@ -72,7 +82,9 @@ export const componentCategories = [
         amount: (set) => Math.ceil(primaryTrackerCount(set) / 5),
         cost: () => 22.99,
         costAll: (set) => Math.ceil(primaryTrackerCount(set) / 5) * 22.99,
-        links: '<a href="https://www.amazon.com/dp/B088YKPZ9D/">Amazon Li-Po Batteries</a><br/><br/><span>$22.99 per 5-pack.</span>',
+        links: '\
+            <a href="https://www.amazon.com/dp/B088YKPZ9D/">Amazon Li-Po Batteries</a><br/>\
+            <span>$22.99 per 5-pack.</span>',
       },
       {
         name: 'Generic 18650 (AliExpress)',
@@ -80,7 +92,10 @@ export const componentCategories = [
         amount: (set) => primaryTrackerCount(set),
         cost: () => 3 + 0.27,
         costAll: (set) => primaryTrackerCount(set) * (3 + 0.27) + 1.89,
-        links: '<a href="https://www.aliexpress.com/wholesale?SearchText=18650+cell">AliExpress 18650 cell</a> and <a href="https://www.aliexpress.us/item/3256801521575042.html">AliExpress (X4 Slot)</a><br/><br/><span>$3 per cell + $0.27 holder, plus $1.89 shipping.</span>',
+        links: '\
+            <a href="https://www.aliexpress.com/wholesale?SearchText=18650+cell">AliExpress 18650 cell</a> and \
+            <a href="https://www.aliexpress.us/item/3256801521575042.html">AliExpress (X4 Slot)</a><br/>\
+            <span>$3 per cell + $0.27 holder, plus $1.89 shipping.</span>',
       },
       {
         name: 'Sourced elsewhere',
@@ -100,7 +115,9 @@ export const componentCategories = [
         amount: (set) => primaryTrackerCount(set),
         cost: () => 0.36,
         costAll: (set) => primaryTrackerCount(set) * 0.36 + 2.07,
-        links: '<a href="https://www.aliexpress.com/item/32649780468.html">AliExpress (18650 mini / type-c / micro)</a><br/><br/><span>$0.36 per board, plus $2.07 shipping.</span>',
+        links: '\
+            <a href="https://www.aliexpress.com/item/32649780468.html">AliExpress (18650 mini / type-c / micro)</a><br/>\
+            <span>$0.36 per board, plus $2.07 shipping.</span>',
       },
       {
         name: 'TP4056 USB charging board - 10 pcs (Amazon)',
@@ -108,7 +125,9 @@ export const componentCategories = [
         amount: () => 1,
         cost: () => 8.19,
         costAll: () => 8.19,
-        links: '<a href="https://www.amazon.com/dp/B08DNK398S">Amazon TP4056</a><br/><br/><span>$8.19 for 10pcs.</span>',
+        links: '\
+            <a href="https://www.amazon.com/dp/B08DNK398S">Amazon TP4056</a><br/>\
+            <span>$8.19 for 10pcs.</span>',
       },
       {
         name: 'Sourced elsewhere',
@@ -128,7 +147,9 @@ export const componentCategories = [
         amount: () => 1,
         cost: () => 1.97,
         costAll: () => 1.97,
-        links: '<a href="https://www.aliexpress.com/item/32975535599.html">AliExpress</a><br/><br/><span>$1.97 for 10pcs.</span>',
+        links: '\
+            <a href="https://www.aliexpress.com/item/32975535599.html">AliExpress</a><br/>\
+            <span>$1.97 for 10pcs.</span>',
       },
       {
         name: 'SS22F32 switches - 10 pcs (Alt) (Amazon)',
@@ -136,7 +157,9 @@ export const componentCategories = [
         amount: () => 1,
         cost: () => 7.99,
         costAll: () => 7.99,
-        links: '<a href="https://www.amazon.com/dp/B083RBS2RT">Amazon SS22F32 switches</a><br/><br/><span>$7.99 for 10pcs.</span>',
+        links: '\
+            <a href="https://www.amazon.com/dp/B083RBS2RT">Amazon SS22F32 switches</a><br/>\
+            <span>$7.99 for 10pcs.</span>',
       },
       {
         name: 'Sourced elsewhere',
@@ -156,7 +179,9 @@ export const componentCategories = [
         amount: () => 1,
         cost: () => 0.62,
         costAll: () => 0.62 + 2.21,
-        links: '<a href="https://www.aliexpress.us/item/3256801365779334.html">AliExpress (1N5817)</a><br/><br/><span>$0.62 for 50pcs, plus $2.21 shipping.</span>',
+        links: '\
+            <a href="https://www.aliexpress.us/item/3256801365779334.html">AliExpress (1N5817)</a><br/>\
+            <span>$0.62 for 50pcs, plus $2.21 shipping.</span>',
       },
       {
         name: '1N5817 diodes - 100 pcs (Amazon)',
@@ -164,7 +189,9 @@ export const componentCategories = [
         amount: () => 1,
         cost: () => 5.99,
         costAll: () => 5.99,
-        links: '<a href="https://www.amazon.com/dp/B079KDQQPD">Amazon 1N5817 diodes</a><br/><br/><span>$5.99 for 100pcs.</span>',
+        links: '\
+            <a href="https://www.amazon.com/dp/B079KDQQPD">Amazon 1N5817 diodes</a><br/>\
+            <span>$5.99 for 100pcs.</span>',
       },
       {
         name: 'Sourced elsewhere',
@@ -185,7 +212,9 @@ export const componentCategories = [
         amount: () => 1,
         cost: () => 1.96,
         costAll: () => 1.96 + 1.29,
-        links: '<a href="https://www.aliexpress.us/item/3256802808441054.html">AliExpress (100pcs 180K ohms)</a><br/><br/><span>$1.96 for 100pcs, plus $1.29 shipping.</span>',
+        links: '\
+            <a href="https://www.aliexpress.us/item/3256802808441054.html">AliExpress (100pcs 180K ohms)</a><br/>\
+            <span>$1.96 for 100pcs, plus $1.29 shipping.</span>',
       },
       {
         name: '180K ohm resistors - 100 pcs (Alt) (Amazon)',
@@ -193,7 +222,9 @@ export const componentCategories = [
         amount: () => 1,
         cost: () => 4.99,
         costAll: () => 4.99,
-        links: '<a href="https://www.amazon.com/dp/B07HDFCNXB">Amazon 180K ohm resistors</a><br/><br/><span>$4.99 for 100pcs.</span>',
+        links: '\
+            <a href="https://www.amazon.com/dp/B07HDFCNXB">Amazon 180K ohm resistors</a><br/>\
+            <span>$4.99 for 100pcs.</span>',
       },
       {
         name: 'Sourced elsewhere',
@@ -214,7 +245,9 @@ export const componentCategories = [
         amount: () => 10,
         cost: () => 0.50,
         costAll: () => 5,
-        links: '<a href="https://docs.slimevr.dev/diy/cases.html">Cases page here</a><br/><br/><span>$0.50 per PCB, $5 for 10pcs.</span>',
+        links: '\
+            <a href="https://docs.slimevr.dev/diy/cases.html">Cases page here</a><br/>\
+            <span>$0.50 per PCB, $5 for 10pcs.</span>',
       },
       {
         name: '24-26 AWG Wire, No PCB (Not Recommended) (AliExpress)',
@@ -222,7 +255,9 @@ export const componentCategories = [
         amount: () => 1,
         cost: () => 1.85,
         costAll: () => 1.85 + 1.68,
-        links: '<a href="https://www.aliexpress.com/item/1005002632016529.html">AliExpress (22 AWG, 2m)</a><br/><br/><span>$1.85 for wire, plus $1.68 shipping.</span>',
+        links: '\
+            <a href="https://www.aliexpress.com/item/1005002632016529.html">AliExpress (22 AWG, 2m)</a><br/>\
+            <span>$1.85 for wire, plus $1.68 shipping.</span>',
       },
       {
         name: '26AWG Wire, No PCB (Not Recommended) (Amazon)',
@@ -230,7 +265,9 @@ export const componentCategories = [
         amount: () => 1,
         cost: () => 14.99,
         costAll: () => 14.99,
-        links: '<a href="https://www.amazon.com/dp/B07G2LRX68">Amazon 26 AWG, 10m spools</a><br/><br/><span>$14.99 for 6 spools.</span>',
+        links: '\
+            <a href="https://www.amazon.com/dp/B07G2LRX68">Amazon 26 AWG, 10m spools</a><br/>\
+            <span>$14.99 for 6 spools.</span>',
       },
       {
         name: 'Sourced elsewhere',
@@ -251,7 +288,9 @@ export const componentCategories = [
         amount: (set) => Math.ceil(extensionCount(set) * 2 / 5),
         cost: () => 3,
         costAll: (set) => Math.ceil(extensionCount(set) * 2 / 5) * 3 + 3.96,
-        links: '<a href="https://www.aliexpress.us/item/3256803829669959.html">AliExpress JST connectors</a><br/><br/><span>$3 for 5pcs, plus $3.96 shipping.</span>',
+        links: '\
+            <a href="https://www.aliexpress.us/item/3256803829669959.html">AliExpress JST connectors</a><br/>\
+            <span>$3 for 5pcs, plus $3.96 shipping.</span>',
       },
       {
         name: 'JST connectors - 5 pin 20 pcs (Amazon)',
@@ -259,7 +298,9 @@ export const componentCategories = [
         amount: (set) => Math.ceil(extensionCount(set) * 2 / 20),
         cost: () => 12.98,
         costAll: (set) => Math.ceil(extensionCount(set) * 2 / 20) * 12.98,
-        links: '<a href="https://www.amazon.com/dp/B075K6N7DF">Amazon JST connectors</a><br/><br/><span>$12.98 for 20pcs.</span>',
+        links: '\
+            <a href="https://www.amazon.com/dp/B075K6N7DF">Amazon JST connectors</a><br/>\
+            <span>$12.98 for 20pcs.</span>',
       },
       {
         name: 'SlimeVR Extension Cables Deluxe Set (SlimeVR shop)',
@@ -267,7 +308,9 @@ export const componentCategories = [
         amount: (set) => Math.ceil(extensionCount(set) / 10),
         cost: () => 4.50,
         costAll: (set) => Math.ceil(extensionCount(set) / 10) * 4.50,
-        links: '<a href="https://shop.slimevr.dev/products/slimevr-extension-cables-deluxe-set">SlimeVR Shop (Deluxe Set)</a><br/><br/><span>~$4.50 for 10 cables.</span>',
+        links: '\
+            <a href="https://shop.slimevr.dev/products/slimevr-extension-cables-deluxe-set">SlimeVR Shop (Deluxe Set)</a><br/>\
+            <span>~$4.50 for 10 cables.</span>',
       },
       {
         name: 'SlimeVR Extension Cables Full-Body Set (SlimeVR shop)',
@@ -275,7 +318,9 @@ export const componentCategories = [
         amount: (set) => Math.ceil(extensionCount(set) / 6),
         cost: () => 3.00,
         costAll: (set) => Math.ceil(extensionCount(set) / 6) * 3.00,
-        links: '<a href="https://shop.slimevr.dev/products/slimevr-extension-cables-full-body-set">SlimeVR Shop (Full-Body Set)</a><br/><br/><span>~$3.00 for 6 cables.</span>',
+        links: '\
+            <a href="https://shop.slimevr.dev/products/slimevr-extension-cables-full-body-set">SlimeVR Shop (Full-Body Set)</a><br/>\
+            <span>~$3.00 for 6 cables.</span>',
       },
       {
         name: 'Sourced elsewhere',
@@ -295,7 +340,8 @@ export const componentCategories = [
         amount: (set) => set,
         cost: () => 2,
         costAll: (set) => set * 2,
-        links: 'You make your own cases!<br/><br/><span>$2 per case (3D print material estimate).</span>',
+        links: '\
+            <span>You make your own cases!<br/><br/>$2 per case (3D print material estimate).</span>',
       },
       {
         name: 'Amazon cases - 6 pcs (Amazon)',
@@ -303,7 +349,9 @@ export const componentCategories = [
         amount: (set) => Math.ceil(set / 6),
         cost: () => 7.49,
         costAll: (set) => Math.ceil(set / 6) * 7.49,
-        links: '<a href="https://www.amazon.com/dp/B08T97JD6Z">Amazon cases</a><br/><br/><span>$7.49 per 6-pack.</span>',
+        links: '\
+            <a href="https://www.amazon.com/dp/B08T97JD6Z">Amazon cases</a><br/>\
+            <span>$7.49 per 6-pack.</span>',
       },
       {
         name: 'Sourced elsewhere',
@@ -324,7 +372,9 @@ export const componentCategories = [
         amount: (set) => set < 6 ? 1 : 2,
         cost: () => 5,
         costAll: (set) => (set < 6 ? 1 : 2) * 5 + 2.77,
-        links: '<a href="https://aliexpress.com/item/1005001908740631.html">AliExpress straps</a><br/><br/><span>$5 per 6-pack, plus $2.77 shipping.</span>',
+        links: '\
+            <a href="https://aliexpress.com/item/1005001908740631.html">AliExpress straps</a><br/>\
+            <span>$5 per 6-pack, plus $2.77 shipping.</span>',
       },
       {
         name: '🟡 Generic Amazon straps - 5 pcs (Amazon)',
@@ -332,7 +382,9 @@ export const componentCategories = [
         amount: (set) => set < 5 ? 1 : 2,
         cost: () => 9.00,
         costAll: (set) => (set < 5 ? 1 : 2) * 9.00,
-        links: '<a href="https://www.amazon.com/dp/B09T5YDMTR/">Amazon straps</a><br/><br/><span>$9 per 5-pack.</span>',
+        links: '\
+            <a href="https://www.amazon.com/dp/B09T5YDMTR/">Amazon straps</a><br/>\
+            <span>$9 per 5-pack.</span>',
       },
       {
         name: 'Sourced elsewhere',
